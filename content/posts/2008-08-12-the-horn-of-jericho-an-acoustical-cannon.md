@@ -41,7 +41,7 @@ The video is a quick visual tour. The sound does not do justice to the sheer _vo
 
 Video Sweep of the Horn of Jericho...
 
-{% youtube 9VrQKh2UQRU %}
+{{< youtube 9VrQKh2UQRU >}}
 
 More pictures...
 

@@ -13,7 +13,6 @@ tags: []
 ---
 Get four popsicle sticks, preferrably after eating four popsicles.  (Use normal thin ones, not thick ones from a craft store.)  Assemble them as shown in the photos.  Weaving in the last piece is just a little tricky.  You'll have to bend the sticks a bit.
 
-{:.gallery}
 ![Four Popsicle Sticks](/static/images/popsicle-four-sticks-171x128.jpg)
 ![Step 1](/static/images/popsicle-step-1-171x128.jpg)
 ![Step 2](/static/images/popsicle-step-2-171x128.jpg)

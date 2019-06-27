@@ -5,9 +5,6 @@ title: Olympics in Boulder
 image: swimmer.jpg
 wordpress_id: 1859
 wordpress_url: http://www.danallan.com/?p=1859
-categories:
-- projects
-- science-demos
 comments: true
 tags: []
 ---

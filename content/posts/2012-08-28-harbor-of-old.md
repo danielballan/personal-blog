@@ -4,22 +4,10 @@ date: 2012-08-28
 title: The Harbor of Old
 wordpress_id: 2315
 wordpress_url: http://www.danallan.com/?p=2315
-categories:
-- notes
 comments: true
 tags:
-- title: Baltimore
-  slug: baltimore
-  autoslug: baltimore
-- title: photography
-  slug: photography
-  autoslug: photography
-- title: maps
-  slug: maps
-  autoslug: maps
-- title: art
-  slug: art
-  autoslug: art
+- Baltimore
+- maps
 ---
 ![Baltimore in 1912](/static/images/inner-harbor-1912.jpg)
 

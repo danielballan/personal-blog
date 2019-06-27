@@ -5,20 +5,11 @@ title: In So Many Words
 image: words-300x239.jpg
 wordpress_id: 2052
 wordpress_url: http://www.danallan.com/?p=2052
-categories:
-- projects
-- computing
 comments: true
 tags:
-- title: computational linguistics
-  slug: computational-linguistics
-  autoslug: computational-linguistics
-- title: Gmail
-  slug: gmail
-  autoslug: gmail
-- title: lexical analysis
-  slug: lexical-analysis
-  autoslug: lexical-analysis
+- computational linguistics
+- lexical analysis
+- gmail
 ---
 In [a book chapter](http://norvig.com/ngrams/) from 2008, Peter Norvig cracked coded, historical German telegrams using a simple computer program. He included the program so you can try it yourself. On my computer, it cracked the code in less than a minute.
 

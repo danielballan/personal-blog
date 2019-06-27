@@ -4,10 +4,7 @@ date: 2012-11-16
 title: Parting Shots
 wordpress_id: 2718
 wordpress_url: http://www.danallan.com/?p=2718
-categories:
-- notes
 comments: true
-tags: []
 ---
 Quotations from Zlatko Tesanovic, brilliant physicist and colorful character. He was remembered today in a tribute held by our physics department.
 

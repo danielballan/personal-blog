@@ -16,20 +16,9 @@ excerpt: "<img class=\"aligncenter size-medium wp-image-1217\" title=\"The physi
 image: bike-physics.jpg
 wordpress_id: 1207
 wordpress_url: http://www.danallan.com/?p=1207
-categories:
-- projects
-- science-demos
 comments: true
 tags:
-- title: mechanical advantage
-  slug: mechanical-advantage
-  autoslug: mechanical-advantage
-- title: bicycles
-  slug: bicycles
-  autoslug: bicycles
-- title: gain ratio
-  slug: gain-ratio
-  autoslug: gain-ratio
+- cycling
 ---
 ![](/static/images/bike-physics-570x378.jpg)
 

@@ -6,10 +6,9 @@ excerpt: a photomosaic composed from the profile pictures of my Facebook friends
 image: dan-from-fb-friends.png
 wordpress_id: 2702
 wordpress_url: http://www.danallan.com/?p=2702
-categories:
-- notes
 comments: true
-tags: []
+tags:
+- photomosaic
 ---
 This is me composed from the profile pictures of my Facebook friends.
 

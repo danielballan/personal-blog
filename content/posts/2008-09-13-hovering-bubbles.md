@@ -5,23 +5,10 @@ title: Hovering Bubbles
 image: hovering-bubbles-2.jpg
 wordpress_id: 426
 wordpress_url: http://www.danallan.com/?p=426
-categories:
-- projects
-- science-demos
 comments: true
 tags:
-- title: bubbles
-  slug: bubbles
-  autoslug: bubbles
-- title: CO2
-  slug: co2
-  autoslug: co2
-- title: carbon dioxide
-  slug: carbon-dioxide
-  autoslug: carbon-dioxide
-- title: four gas tester
-  slug: four-gas-tester
-  autoslug: four-gas-tester
+- bubbles
+- science demos
 ---
 ![](/static/images/hovering-bubbles.jpg)
 

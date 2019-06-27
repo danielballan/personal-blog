@@ -16,25 +16,10 @@ image: page_1.png
 wordpress_id: 618
 wordpress_url: http://www.danallan.com/?p=618
 comments: true
-categories:
-- projects
-- science-demos
 tags:
-- title: balloons
-  slug: balloons
-  autoslug: balloons
-- title: April Fools
-  slug: april-fools
-  autoslug: april-fools
-- title: C.Y. Chien
-  slug: cy-chien
-  autoslug: c.y.-chien
-- title: Bloomberg
-  slug: bloomberg
-  autoslug: bloomberg
-- title: Fermi estimate
-  slug: fermi-estimate
-  autoslug: fermi-estimate
+- April Fools
+- Fermi estimation
+- balloons
 ---
 After hearing several hours of lecture from Dr. C.Y. Chien on Fermi estimation problems, the physics grad students felt we owed _him_ one. We invited Dr. Chien and the physics department at large to make their own estimate: how many balloons does it take to fill the foyer in the main office?
 

@@ -5,23 +5,12 @@ title: Paintball in the Lab
 image: paintball-setup.jpg
 wordpress_id: 1128
 wordpress_url: http://www.danallan.com/?p=1128
-categories:
-- projects
-- science-demos
 comments: true
 tags:
-- title: high-speed photography
-  slug: high-speed-photography
-  autoslug: high-speed-photography
-- title: research
-  slug: research
-  autoslug: research
-- title: bruising
-  slug: bruising
-  autoslug: bruising
-- title: Katherine Scafide
-  slug: katherine-scafide
-  autoslug: katherine-scafide
+- high-speed photography
+- paintball
+- research
+- bruising
 ---
 A paintball hits a cardboard target, played back at 1/67 of its actual speed.
 

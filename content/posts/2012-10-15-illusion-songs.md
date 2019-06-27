@@ -4,10 +4,9 @@ date: 2012-10-15
 title: Illusion Songs
 wordpress_id: 2466
 wordpress_url: http://www.danallan.com/?p=2466
-categories:
-- notes
 comments: true
-tags: []
+tags:
+- music
 ---
 ![](/static/images/sound-waves.png)
 

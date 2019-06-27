@@ -6,10 +6,8 @@ image: intense-glow.jpg
 wordpress_id: 264
 wordpress_url: http://www.danallan.com/?p=264
 comments: true
-categories:
-- projects
-- science-demos
-tags: []
+tags:
+- science demos
 ---
 For four summers, I broke glass at the Corning Museum of Glass and explained the science of it. I also showed sample of glass with special properties, which I will share here.
 

@@ -14,13 +14,13 @@ tags: []
 Get four popsicle sticks, preferrably after eating four popsicles.  (Use normal thin ones, not thick ones from a craft store.)  Assemble them as shown in the photos.  Weaving in the last piece is just a little tricky.  You'll have to bend the sticks a bit.
 
 {:.gallery}
-![Four Popsicle Sticks]({% asset_path popsicle-four-sticks-171x128.jpg %})
-![Step 1]({% asset_path popsicle-step-1-171x128.jpg %})
-![Step 2]({% asset_path popsicle-step-2-171x128.jpg %})
-![Step 2, Done]({% asset_path popsicle-step-2-done-171x128.jpg %})
-![Step 3]({% asset_path popsicle-step-3-171x128.jpg %})
-![Step 4]({% asset_path popsicle-finish-171x128.jpg %})
-![Final Piece]({% asset_path popsicle-final-piece-171x128.jpg %})
+![Four Popsicle Sticks](/static/images/popsicle-four-sticks-171x128.jpg)
+![Step 1](/static/images/popsicle-step-1-171x128.jpg)
+![Step 2](/static/images/popsicle-step-2-171x128.jpg)
+![Step 2, Done](/static/images/popsicle-step-2-done-171x128.jpg)
+![Step 3](/static/images/popsicle-step-3-171x128.jpg)
+![Step 4](/static/images/popsicle-finish-171x128.jpg)
+![Final Piece](/static/images/popsicle-final-piece-171x128.jpg)
 
 Notice, in the final picture, that the sticks at the top are barely overlapping.  This is your "popsicle stick bomb."  Throw it!
 

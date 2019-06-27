@@ -31,7 +31,7 @@ tags:
   slug: penn-state
   autoslug: penn-state
 ---
-![]({% asset_path jericho-medium.jpg %})
+![](/static/images/jericho-medium.jpg)
 
 With a giant glass pipe, a slice of ceramic cut from a diesel exhaust system, and a strip of toaster wire, I built an acoustical cannon: The Horn of Jericho. It is the brainchild of Dr. John Wight, a research scientist at Corning Incorporated, and it is probably unique. It is a vast enlargement of a test tube-sized design, distributed as a $14 [kit](http://www.acs.psu.edu/thermoacoustics/refrigeration/laserdemo.htm) by Penn State.
 
@@ -45,7 +45,7 @@ Video Sweep of the Horn of Jericho...
 
 More pictures...
 
-![]({% asset_path 100_4066.jpg %})
-![]({% asset_path 100_4065.jpg %})
-![]({% asset_path 100_4062.jpg %})
-![]({% asset_path 100_4067.jpg %})
+![](/static/images/100_4066.jpg)
+![](/static/images/100_4065.jpg)
+![](/static/images/100_4062.jpg)
+![](/static/images/100_4067.jpg)

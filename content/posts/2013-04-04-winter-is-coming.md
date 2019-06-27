@@ -18,7 +18,3 @@ We were Nerd Famous for a day. A roundup:
 * [a JHU press release](http://hub.jhu.edu/2013/06/11/game-of-thrones-season-hypothesis)
 * [a thoughtful post](http://www.mikebrotherton.com/2013/04/03/game-of-thrones-astronomy-by-astronomers/)
 * [a meme](http://www.itsokaytobesmart.com/post/47045975478/scientists-determine-that-the-weirdness-of-seasons)
-* and some attention on Twitter...
-
-{% tweet https://twitter.com/MicrobeLover/statuses/319539302629523456 align='center' %}
-{% tweet https://twitter.com/Sydney_Uni/status/319266000036048896 align='center' %}

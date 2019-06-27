@@ -25,6 +25,6 @@ tags:
 ---
 A musical tribute to Greg and Kate from their singing and dancing friends. Incidentally, this is really the first time we ran through it all together. We practiced, in our separate locations, with the sheet music and a sing-along MP3.
 
-{% youtube 2j78zzwfTns %}
+{{< youtube 2j78zzwfTns >}}
 
-[Sheet Music]({% asset_path Greg-and-Kate-the-Muiscal-sheet-music.pdf %})
+[Sheet Music](/static/papers/Greg-and-Kate-the-Muiscal-sheet-music.pdf)

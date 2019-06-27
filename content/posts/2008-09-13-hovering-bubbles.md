@@ -23,13 +23,13 @@ tags:
   slug: four-gas-tester
   autoslug: four-gas-tester
 ---
-![]({% asset_path hovering-bubbles.jpg %})
+![](/static/images/hovering-bubbles.jpg)
 
 Carbon dioxide (CO2) is heavier than most other molecules and elements in the air.  In the same way that Helium rises (think of party balloons), CO2 sinks.
 
 With a very large bowl or container and lots and lots of vinegar and baking soda, you can make a little "puddle" of CO2.  When soap bubbles - which are filled with normal air - hover over this puddle, they float in place like beach balls sitting on top of a pool.  You can see this in the picture, but of course it's much weirder-looking in person: bubbles serenely unmoving in midair.
 
-![]({% asset_path making-a-mess-171x128.jpg %})
+![](/static/images/making-a-mess-171x128.jpg)
 
 This Four Gas Tester, designed to check if air in a workplace is safe to breathe, showed that the air was normal above the bowl.  But when I dipped the sensor under where the bubbles were floating, red alarm lights indicated that the air was not breathable - too much CO2!
 

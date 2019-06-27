@@ -15,17 +15,17 @@ For four summers, I broke glass at the Corning Museum of Glass and explained the
 
 ## Glowing Glass.
 
-![]({% asset_path squares-150x112.jpg %})
+![](/static/images/squares-150x112.jpg)
 
 These glass squares look plain and unremarkable.  But under ultraviolet light, they become brilliantly colored: red, orange, yellow, green, blue, and purple. Each square is doped with a chemical that fluoresces under UV light, producing a vibrant rainbow.  That is, the glass absorbs energy from incoming UV light and reemits that energy as light of a different, visible color. These glass squares were made by an expert in this sort of chemical trickery, Dr. Matthew Dejneka.
 
-![]({% asset_path intense-glow-1024x768.jpg %})
+![](/static/images/intense-glow-1024x768.jpg)
 
 The flashlight itself has four ultraviolet LEDs. To our eyes, it looks dim and vaguely purple, but it is extremely bright in the UV range outside human perception.
 
 ## Taper Magnifier
 
-![]({% asset_path taper-magnify-150x112.jpg %})
+![](/static/images/taper-magnify-150x112.jpg)
 
 A magnifying glass works by bending the light reflecting from an object to create a larger image. This "taper optic" works in a totally different way. Notice how it is different from a magnifying glass:
 
@@ -33,7 +33,7 @@ A magnifying glass works by bending the light reflecting from an object to creat
 * A magnifying glass has to be held just  to get the words into focus. The taper optic sits flat on the page. Words look as if they are written in large print directly on the glass.
 * A magnifying glass focuses a bright spot at the center of its view and it darkens the rest. The taper optic illuminates its subject evenly.
 
-![]({% asset_path taber-on-page-150x112.jpg %})
+![](/static/images/taber-on-page-150x112.jpg)
 
 ### What is it?
 
@@ -45,5 +45,5 @@ They are too expensive. A good-sized one is in the $80 range, and as of this wri
 
 ### What happens if you flip it up side down?
 
-![]({% asset_path taber-shrink-150x112.jpg %})
+![](/static/images/taber-shrink-150x112.jpg)
 

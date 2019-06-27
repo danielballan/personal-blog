@@ -37,7 +37,7 @@ Of Bessel Inequality:
 
 > Rays of sunshine will come into your lonely room.
 
-![]({% asset_path zlatko_teaching.jpg %})
+![](/static/images/zlatko_teaching.jpg)
 
 > Now, just by enduring evidence, we come to the heart of its boring darkness: Special Functions.
 

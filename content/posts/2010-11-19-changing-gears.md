@@ -30,7 +30,7 @@ tags:
   slug: gain-ratio
   autoslug: gain-ratio
 ---
-![]({% asset_path bike-physics-570x378.jpg %})
+![](/static/images/bike-physics-570x378.jpg)
 
 Everyone who's been on a bike knows the trade-off: fast and easy pedaling (low gear) or slow but strenuous pedaling (high gear). I shifted gears while students felt the difference, pedaling with their hands. Marking the rear wheel with a piece of tape, we counted how many times it spun for each turn of the pedals. In gears where pedaling was difficult, the rear wheel turned more.
 
@@ -42,7 +42,7 @@ $$ \text{Gain Ratio} = \displaystyle\frac{\text{Wheel Size}}{\text{Pedal Crank S
 
 The first fraction is fixed on a given bike; only the second fraction changes with shifting. On my Bianchi, the first fraction is 340 mm / 170 mm = 2. By counting the teeth on the front and rear gears, we can compute the gain ratio for all 14 "speeds" (gear choices).
 
-![gain ratio table]({% asset_path gain-ratio-table.png %})
+![gain ratio table](/static/images/gain-ratio-table.png)
 
 To interpret this table of gain ratios, take for example the highest one, 8.2. It comes from choosing the large gear in front (53 teeth) and the smallest gear in back (13 teeth). For each mile that my foot travels through the pedal's circular path, the bike moves 8.2 miles forward.
 

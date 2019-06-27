@@ -37,18 +37,18 @@ tags:
 ---
 After hearing several hours of lecture from Dr. C.Y. Chien on Fermi estimation problems, the physics grad students felt we owed _him_ one. We invited Dr. Chien and the physics department at large to make their own estimate: how many balloons does it take to fill the foyer in the main office?
 
-![]({% asset_path april_fools_balloons_page_1.png %})
-![]({% asset_path april_fools_balloons_page_2.png %})
-![]({% asset_path april_fools_balloons_page_3.png %})
-![]({% asset_path april_fools_balloons_page_4.png %})
-![]({% asset_path april_fools_balloons_page_5.png %})
-![]({% asset_path april_fools_balloons_page_6.png %})
-![]({% asset_path april_fools_balloons_page_7.png %})
-![]({% asset_path april_fools_balloons_page_8.png %})
-![]({% asset_path april_fools_balloons_page_9.png %})
-![]({% asset_path april_fools_balloons_page_10.png %})
-![]({% asset_path april_fools_balloons_page_11.png %})
-![]({% asset_path april_fools_balloons_page_12.png %})
+![](/static/images/april_fools_balloons_page_1.png)
+![](/static/images/april_fools_balloons_page_2.png)
+![](/static/images/april_fools_balloons_page_3.png)
+![](/static/images/april_fools_balloons_page_4.png)
+![](/static/images/april_fools_balloons_page_5.png)
+![](/static/images/april_fools_balloons_page_6.png)
+![](/static/images/april_fools_balloons_page_7.png)
+![](/static/images/april_fools_balloons_page_8.png)
+![](/static/images/april_fools_balloons_page_9.png)
+![](/static/images/april_fools_balloons_page_10.png)
+![](/static/images/april_fools_balloons_page_11.png)
+![](/static/images/april_fools_balloons_page_12.png)
 
 ## Figures
 

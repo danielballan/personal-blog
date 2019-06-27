@@ -1,3 +1,4 @@
 baseURL = "https://danallan.com/"
 languageCode = "en-us"
 title = "DanAllan.com"
+theme = "temple"

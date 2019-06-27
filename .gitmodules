@@ -1,0 +1,3 @@
+[submodule "temple"]
+	path = themes/temple
+	url = https://github.com/aos/temple

@@ -18,3 +18,5 @@ scientists get started with good software tools and habits.
 
 I live in Baltimore with my wife and daughter. I make regular visits to
 Brookhaven outside of New York City. I am an enthusiastic Baltimoron.
+
+![](/static/images/dan-allan.png)

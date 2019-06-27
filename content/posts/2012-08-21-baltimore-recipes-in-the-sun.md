@@ -3,7 +3,8 @@ layout: post
 title: Baltimore Recipes in the Sun
 wordpress_id: 2233
 wordpress_url: http://www.danallan.com/?p=2233
-categories: notes
+categories:
+- notes
 comments: true
 tags:
 - title: recipes

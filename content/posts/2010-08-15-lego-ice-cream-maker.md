@@ -4,7 +4,9 @@ title: LEGO Ice Cream Maker
 image: DSC0310.NEF_.jpg
 wordpress_id: 1018
 wordpress_url: http://www.danallan.com/?p=1018
-categories: projects contraptions
+categories:
+- projects
+- contraptions
 comments: true
 tags:
 - title: Cooking for Geeks

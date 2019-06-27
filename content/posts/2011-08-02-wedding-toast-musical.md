@@ -4,7 +4,9 @@ title: Wedding Toast Musical
 image: greg-kate-altar.jpg
 wordpress_id: 1370
 wordpress_url: http://www.danallan.com/?p=1370
-categories: projects music
+categories:
+- projects
+- music
 comments: true
 tags:
 - title: Greg Skipton

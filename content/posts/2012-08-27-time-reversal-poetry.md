@@ -3,7 +3,8 @@ layout: post
 title: Time-Reversal Poetry
 wordpress_id: 2241
 wordpress_url: http://www.danallan.com/?p=2241
-categories: notes
+categories:
+- notes
 comments: true
 tags:
 - title: Mark Twain

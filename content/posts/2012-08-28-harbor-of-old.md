@@ -3,7 +3,8 @@ layout: post
 title: The Harbor of Old
 wordpress_id: 2315
 wordpress_url: http://www.danallan.com/?p=2315
-categories: notes
+categories:
+- notes
 comments: true
 tags:
 - title: Baltimore

@@ -3,7 +3,8 @@ layout: post
 title: What shall I call thee when thou art a man?
 wordpress_id: 2709
 wordpress_url: http://www.danallan.com/?p=2709
-categories: notes
+categories:
+- notes
 comments: true
 tags: []
 ---

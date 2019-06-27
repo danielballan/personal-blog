@@ -3,7 +3,8 @@ layout: post
 title: Navel Gazing Science
 wordpress_id: 2334
 wordpress_url: http://www.danallan.com/?p=2334
-categories: notes
+categories:
+- notes
 comments: true
 tags: []
 ---

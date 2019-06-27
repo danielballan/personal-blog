@@ -3,7 +3,8 @@ layout: post
 title: Winter is Coming
 wordpress_id: 3005
 wordpress_url: http://www.danallan.com/?p=3005
-categories: notes
+categories:
+- notes
 comments: true
 tags: []
 ---

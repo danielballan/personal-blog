@@ -3,7 +3,8 @@ layout: post
 title: Government as a Platform
 wordpress_id: 2398
 wordpress_url: http://www.danallan.com/?p=2398
-categories: notes
+categories:
+- notes
 comments: true
 tags: []
 ---

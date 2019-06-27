@@ -3,7 +3,8 @@ layout: post
 title: Become a More Informed Voter Through Powerpoint and Drinking
 wordpress_id: 2659
 wordpress_url: http://www.danallan.com/?p=2659
-categories: notes
+categories:
+- notes
 comments: true
 tags: []
 ---

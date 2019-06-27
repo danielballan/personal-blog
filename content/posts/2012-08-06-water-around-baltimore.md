@@ -3,7 +3,8 @@ layout: post
 title: Water around Baltimore
 wordpress_id: 1945
 wordpress_url: http://www.danallan.com/?p=1945
-categories: notes
+categories:
+- notes
 comments: true
 tags:
 - title: Baltimore

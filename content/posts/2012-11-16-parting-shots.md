@@ -3,7 +3,8 @@ layout: post
 title: Parting Shots
 wordpress_id: 2718
 wordpress_url: http://www.danallan.com/?p=2718
-categories: notes
+categories:
+- notes
 comments: true
 tags: []
 ---

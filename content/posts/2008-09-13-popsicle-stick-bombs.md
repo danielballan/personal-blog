@@ -5,7 +5,9 @@ image: four-sticks.jpg
 wordpress_id: 370
 wordpress_url: http://www.danallan.com/?p=370
 comments: true
-categories: projects science-demos
+categories:
+- projects
+- science-demos
 tags: []
 ---
 Get four popsicle sticks, preferrably after eating four popsicles.  (Use normal thin ones, not thick ones from a craft store.)  Assemble them as shown in the photos.  Weaving in the last piece is just a little tricky.  You'll have to bend the sticks a bit.

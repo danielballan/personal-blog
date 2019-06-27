@@ -3,7 +3,8 @@ layout: post
 title: Robot Serenade
 wordpress_id: 2767
 wordpress_url: http://www.danallan.com/?p=2767
-categories: notes
+categories:
+- notes
 comments: true
 tags: []
 ---

@@ -3,7 +3,8 @@ layout: post
 title: For Y'all Who Use Multiple Computers
 wordpress_id: 2961
 wordpress_url: http://www.danallan.com/?p=2961
-categories: notes
+categories:
+- notes
 comments: true
 tags: []
 ---

@@ -5,7 +5,8 @@ excerpt: I fed my mosaic-maker 7000 screen-captures from Firefly.
 image: malcolm-reynolds.png
 wordpress_id: 2683
 wordpress_url: http://www.danallan.com/?p=2683
-categories: notes
+categories:
+- notes
 comments: true
 tags: []
 ---

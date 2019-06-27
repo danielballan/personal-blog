@@ -3,7 +3,8 @@ layout: post
 title: Big Data in the Library
 date: 2013-12-09 13:44:43 -0500
 comments: true
-categories: notes
+categories:
+- notes
 published: false
 ---
 

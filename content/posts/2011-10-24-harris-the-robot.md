@@ -4,7 +4,8 @@ title: Harris the Robot
 image: robot-thumbnail.png
 wordpress_id: 1489
 wordpress_url: http://www.danallan.com/?p=1489
-categories: notes
+categories:
+- notes
 comments: true
 tags:
 - title: PR2

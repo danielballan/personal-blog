@@ -3,7 +3,8 @@ layout: post
 title: Handy Code for Corning-ites
 wordpress_id: 2377
 wordpress_url: http://www.danallan.com/?p=2377
-categories: notes
+categories:
+- notes
 comments: true
 tags: []
 ---

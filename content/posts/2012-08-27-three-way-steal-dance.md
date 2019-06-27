@@ -3,7 +3,8 @@ layout: post
 title: Three-way Steal Dance
 wordpress_id: 2266
 wordpress_url: http://www.danallan.com/?p=2266
-categories: notes
+categories:
+- notes
 comments: true
 tags:
 - title: Lindy Hop

@@ -3,7 +3,8 @@ layout: post
 title: Illusion Songs
 wordpress_id: 2466
 wordpress_url: http://www.danallan.com/?p=2466
-categories: notes
+categories:
+- notes
 comments: true
 tags: []
 ---

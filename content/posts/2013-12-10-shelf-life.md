@@ -3,7 +3,8 @@ layout: post
 title: "Shelf Life"
 date: 2013-12-10 08:56:17 -0500
 comments: true
-categories: notes
+categories:
+- notes
 ---
 
 In his essay [On Smarm](http://gawker.com/on-smarm-1476594977), Tom Socca quotes Malcolm Gladwell:

@@ -4,7 +4,9 @@ title: In So Many Words
 image: words-300x239.jpg
 wordpress_id: 2052
 wordpress_url: http://www.danallan.com/?p=2052
-categories: projects computing
+categories:
+- projects
+- computing
 comments: true
 tags:
 - title: computational linguistics

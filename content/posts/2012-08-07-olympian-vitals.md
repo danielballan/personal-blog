@@ -3,7 +3,8 @@ layout: post
 title: Olympian Vitals
 wordpress_id: 2018
 wordpress_url: http://www.danallan.com/?p=2018
-categories: notes
+categories:
+- notes
 comments: true
 tags:
 - title: Olympics

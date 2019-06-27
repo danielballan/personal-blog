@@ -3,7 +3,8 @@ layout: post
 title: Who Made My Pants?
 date: 2013-12-09 16:34:47 -0500
 comments: true
-categories: notes
+categories:
+- notes
 ---
 
 Pore over [this report](http://www.free2work.org/trends/apparel/Apparel-Industry-Trends-2012.pdf) on the extent to which apparel companies prevent and address modern slavery through their supply chain.

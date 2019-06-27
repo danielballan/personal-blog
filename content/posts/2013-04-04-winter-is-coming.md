@@ -1,5 +1,6 @@
 ---
 layout: post
+date: 2013-04-04
 title: Winter is Coming
 wordpress_id: 3005
 wordpress_url: http://www.danallan.com/?p=3005

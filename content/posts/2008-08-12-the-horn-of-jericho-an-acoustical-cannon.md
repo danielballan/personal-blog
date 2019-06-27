@@ -1,5 +1,6 @@
 ---
 layout: post
+date: 2008-08-12
 title: 'The Horn of Jericho: An Acoustical Cannon'
 comments: true
 excerpt: "With a giant glass pipe, a slice of ceramic cut from a diesel exhaust system,

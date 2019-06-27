@@ -1,5 +1,6 @@
 ---
 layout: post
+date: 2012-08-04
 title: Intuition, in physicists and biologists
 wordpress_id: 1922
 wordpress_url: http://www.danallan.com/?p=1922

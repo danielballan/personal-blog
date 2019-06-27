@@ -1,5 +1,6 @@
 ---
 layout: post
+date: 2012-11-12
 title: Mal Mosaic
 excerpt: I fed my mosaic-maker 7000 screen-captures from Firefly.
 image: malcolm-reynolds.png

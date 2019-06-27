@@ -1,5 +1,6 @@
 ---
 layout: post
+date: 2012-11-16
 title: Parting Shots
 wordpress_id: 2718
 wordpress_url: http://www.danallan.com/?p=2718

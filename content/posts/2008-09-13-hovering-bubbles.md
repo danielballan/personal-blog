@@ -1,5 +1,6 @@
 ---
 layout: post
+date: 2008-09-13
 title: Hovering Bubbles
 image: hovering-bubbles-2.jpg
 wordpress_id: 426

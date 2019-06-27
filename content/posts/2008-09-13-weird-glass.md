@@ -1,5 +1,6 @@
 ---
 layout: post
+date: 2008-09-13
 title: Weird Glass
 image: intense-glow.jpg
 wordpress_id: 264

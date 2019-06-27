@@ -1,5 +1,6 @@
 ---
 layout: post
+date: 2012-10-11
 title: Government as a Platform
 wordpress_id: 2398
 wordpress_url: http://www.danallan.com/?p=2398

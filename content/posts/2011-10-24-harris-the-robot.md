@@ -1,5 +1,6 @@
 ---
 layout: post
+date: 2011-10-24
 title: Harris the Robot
 image: robot-thumbnail.png
 wordpress_id: 1489

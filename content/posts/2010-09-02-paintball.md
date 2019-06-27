@@ -1,5 +1,6 @@
 ---
 layout: post
+date: 2010-09-02
 title: Paintball in the Lab
 image: paintball-setup.jpg
 wordpress_id: 1128

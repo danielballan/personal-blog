@@ -1,5 +1,6 @@
 ---
 layout: post
+date: 2012-08-27
 title: Time-Reversal Poetry
 wordpress_id: 2241
 wordpress_url: http://www.danallan.com/?p=2241

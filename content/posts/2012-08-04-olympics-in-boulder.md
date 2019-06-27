@@ -1,5 +1,6 @@
 ---
 layout: post
+date: 2012-08-04
 title: Olympics in Boulder
 image: swimmer.jpg
 wordpress_id: 1859

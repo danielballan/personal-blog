@@ -1,5 +1,6 @@
 ---
 layout: post
+date: 2012-12-13
 title: The Audacity of Dispair
 wordpress_id: 2967
 wordpress_url: http://www.danallan.com/?p=2967

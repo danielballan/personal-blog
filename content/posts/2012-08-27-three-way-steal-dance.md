@@ -1,5 +1,6 @@
 ---
 layout: post
+date: 2012-08-27
 title: Three-way Steal Dance
 wordpress_id: 2266
 wordpress_url: http://www.danallan.com/?p=2266

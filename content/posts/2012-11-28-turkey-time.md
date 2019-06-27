@@ -1,5 +1,6 @@
 ---
 layout: post
+date: 2012-11-28
 title: Turkey Time
 excerpt: Estimating turkey cooking times with science.
 image: 2012-11-24-20.20.54.jpg

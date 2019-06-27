@@ -1,5 +1,6 @@
 ---
 layout: post
+date: 2012-10-27
 title: Photomosaics
 image: matt-kilroy.jpg
 wordpress_id: 2553

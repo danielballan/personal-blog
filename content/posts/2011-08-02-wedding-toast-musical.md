@@ -1,5 +1,6 @@
 ---
 layout: post
+date: 2011-08-02
 title: Wedding Toast Musical
 image: greg-kate-altar.jpg
 wordpress_id: 1370

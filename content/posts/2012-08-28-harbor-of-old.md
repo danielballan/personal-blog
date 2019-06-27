@@ -1,5 +1,6 @@
 ---
 layout: post
+date: 2012-08-28
 title: The Harbor of Old
 wordpress_id: 2315
 wordpress_url: http://www.danallan.com/?p=2315

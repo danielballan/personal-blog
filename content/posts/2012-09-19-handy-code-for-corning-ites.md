@@ -1,5 +1,6 @@
 ---
 layout: post
+date: 2012-09-19
 title: Handy Code for Corning-ites
 wordpress_id: 2377
 wordpress_url: http://www.danallan.com/?p=2377

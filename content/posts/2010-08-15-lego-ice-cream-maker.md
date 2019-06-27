@@ -1,5 +1,6 @@
 ---
 layout: post
+date: 2010-08-15
 title: LEGO Ice Cream Maker
 image: DSC0310.NEF_.jpg
 wordpress_id: 1018

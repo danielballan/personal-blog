@@ -1,5 +1,6 @@
 ---
 layout: post
+date: 2012-11-12
 title: Facebook Friends Mosaic
 excerpt: a photomosaic composed from the profile pictures of my Facebook friends
 image: dan-from-fb-friends.png

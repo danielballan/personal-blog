@@ -1,5 +1,6 @@
 ---
 layout: post
+date: 2010-11-19
 title: Changing Gears
 excerpt: "<img class=\"aligncenter size-medium wp-image-1217\" title=\"The physics
   of bikes!\" src=\"http://www.danallan.com/wp-content/uploads/2010/11/bike-physics-570x378.jpg\"

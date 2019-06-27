@@ -1,5 +1,6 @@
 ---
 layout: post
+date: 2012-10-15
 title: Illusion Songs
 wordpress_id: 2466
 wordpress_url: http://www.danallan.com/?p=2466

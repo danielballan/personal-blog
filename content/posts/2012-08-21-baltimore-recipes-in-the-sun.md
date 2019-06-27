@@ -1,5 +1,6 @@
 ---
 layout: post
+date: 2012-08-21
 title: Baltimore Recipes in the Sun
 wordpress_id: 2233
 wordpress_url: http://www.danallan.com/?p=2233

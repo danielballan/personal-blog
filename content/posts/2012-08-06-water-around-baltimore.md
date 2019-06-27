@@ -1,5 +1,6 @@
 ---
 layout: post
+date: 2012-08-06
 title: Water around Baltimore
 wordpress_id: 1945
 wordpress_url: http://www.danallan.com/?p=1945

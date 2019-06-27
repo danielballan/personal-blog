@@ -1,5 +1,6 @@
 ---
 layout: post
+date: 2012-11-30
 title: For Y'all Who Use Multiple Computers
 wordpress_id: 2961
 wordpress_url: http://www.danallan.com/?p=2961

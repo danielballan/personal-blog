@@ -1,5 +1,6 @@
 ---
 layout: post
+date: 2012-09-05
 title: Navel Gazing Science
 wordpress_id: 2334
 wordpress_url: http://www.danallan.com/?p=2334

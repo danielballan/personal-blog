@@ -1,5 +1,6 @@
 ---
 layout: post
+date: 2012-08-20
 title: In So Many Words
 image: words-300x239.jpg
 wordpress_id: 2052

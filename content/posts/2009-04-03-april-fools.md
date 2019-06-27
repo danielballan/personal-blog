@@ -1,5 +1,6 @@
 ---
 layout: post
+date: 2009-04-03
 title: 'April Fools: A Fermi Problem'
 excerpt: "After hearing several hours of lecture from Dr. C.Y. Chien on \"Order of
   Magnitude Estimation Problems,\" we felt we owed <em>him</em> one.  We invited Dr.

@@ -1,5 +1,6 @@
 ---
 layout: post
+date: 2008-09-13
 title: Popsicle Stick Bombs
 image: four-sticks.jpg
 wordpress_id: 370

@@ -1,5 +1,6 @@
 ---
 layout: post
+date: 2012-11-13
 title: What shall I call thee when thou art a man?
 wordpress_id: 2709
 wordpress_url: http://www.danallan.com/?p=2709

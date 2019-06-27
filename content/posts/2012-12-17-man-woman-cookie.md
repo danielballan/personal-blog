@@ -1,5 +1,6 @@
 ---
 layout: post
+date: 2012-12-17
 title: Gingerbread Man/Woman
 excerpt: a crude but delicious likeness
 image: man-woman-cookie.jpg
@@ -10,7 +11,5 @@ categories:
 comments: true
 tags: []
 ---
-![man-woman statue]({% asset_path man-woman-statue.jpg %})
-![man-woman cookie]({% asset_path man-woman-cookie.jpg %}) 
-
-{% tweet https://twitter.com/manwomanstatue/status/280694634391429120 %}
+![man-woman statue](/static/images/man-woman-statue.jpg)
+![man-woman cookie](/static/images/man-woman-cookie.jpg) 

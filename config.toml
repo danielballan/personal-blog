@@ -2,3 +2,9 @@ baseURL = "https://blog.danallan.com/"
 languageCode = "en-us"
 title = "DanAllan.com"
 theme = "temple"
+
+[author]
+  name = "Daniel Allan"
+  github = "danielballan"
+  email = "daniel.b.allan@gmail.com"
+  twitter = "danielballan"

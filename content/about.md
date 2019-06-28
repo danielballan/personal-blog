@@ -34,5 +34,4 @@ and physics at the University of Rochester.
 
 I live in Baltimore with my wife and daughter. I make regular visits to
 Brookhaven, located outside of New York City. I am an amateur musician, a Lindy
-Hopper, and an enthusiastic Baltimoron.
-
+Hopper, and an enthusiastic Baltimorean.

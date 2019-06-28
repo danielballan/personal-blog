@@ -3,7 +3,7 @@ title: "About"
 date: 2019-06-27T12:48:17-04:00
 ---
 
-<img src="/static/images/dan-allan.png" class="pull-right" />
+<div class="pull-right"><img src="/static/images/dan-allan.png" /></div>
 
 I am a scientific software developer. I build and teach software for data
 acquisition, data management, and scientific data analysis. I am employed at

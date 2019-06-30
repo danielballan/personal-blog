@@ -7,7 +7,9 @@ date: 2019-06-27T12:48:17-04:00
 
 I am a scientific software developer. I build and teach software for data
 acquisition, data management, and scientific data analysis. I am employed at
-Brookhaven National Lab's National Synchrotron Light Source II, a Department of
+Brookhaven National Lab's
+[National Synchrotron Light Source
+II](https://www.bnl.gov/ps/)(https://www.bnl.gov/ps/), a Department of
 Energy facility that supports a broad range of scientific research.
 
 My primary work is the [Bluesky Project](http://blueskyproject.io), which
@@ -21,7 +23,7 @@ work has been
 See [github.com/danielballan](https://github.com/danielballan/) for more of my
 software contributions.
 
-I enjoy advocating for open source software and open science; I maintain a
+I enjoy advocating for open source software and open science. I maintain a
 [guide](https://nsls-ii.github.io/scientific-python-cookiecutter/) to help
 scientists get started with good software tools and habits.
 

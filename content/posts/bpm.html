@@ -1,0 +1,147 @@
+---
+title: Beats-per-Minute Measurement Tool
+date: 2014-12-19
+tags:
+  - music
+---
+<!-- saved from url=(0057)http://www.danallan.com/wp-content/special-pages/bpm.html -->
+<SCRIPT language="JavaScript">
+<!--
+// Daniel Allan 2008
+// with a tip of the hat to David Lu!!
+
+var timedReset
+var timeOutInterval = 2000 // 2 seconds
+var desiredPrecision = 2; // 2 BPM
+var beats = 0;
+var initialTime = 0; 
+var timing = new Array();
+var mean = 0;
+var variance = 0;
+var sterror = 0;
+
+// Input background color reflects state of measurements.
+function colorize(state)
+{
+	var bgColor;
+	switch (state)
+	{
+		case 0: // timed out, ready for new data set 
+			bgColor = "#88AAFF";
+			break;
+		case 1: // measuring
+			bgColor = "#FFFF99";	
+			break;
+		case 2: // measured with desiredPrecision
+			bgColor = "#77FF77";	
+			break;
+	}
+	dispBeats.style.backgroundColor = bgColor; 
+	dispMean.style.backgroundColor = bgColor; 
+	dispSterror.style.backgroundColor = bgColor; 
+	return true;
+}
+
+// The ON and OFF switches for a timed reset.
+function initializeReset()
+{
+	timedReset = setTimeout("executeReset()", timeOutInterval);
+}
+function cancelReset()
+{
+	clearTimeout(timedReset);
+}
+function executeReset()
+{
+	beats = 0;
+	dataPoints = 0;
+	timing = []; // clear array
+	colorize(0);
+}
+
+// Meat and potatoes.
+function analyze(e)
+{
+	cancelReset();
+
+	dispMean = document.getElementById("dispMean");
+	dispBeats = document.getElementById("dispBeats");
+	dispSterror = document.getElementById("dispSterror");
+
+	whenIsIt = new Date;
+
+	if (beats == 0)
+	{
+		dispBeats.value = '1';
+		dispMean.value = '';
+		dispSterror.value = '';
+		initialTime = whenIsIt.getTime();
+		beats = 1;
+		colorize(1);
+	}
+	else
+	{
+		// Measure size of time window and record in array.
+		timing[beats - 1] = 60000 / (whenIsIt.getTime() - initialTime);
+		dataCount = timing.length;
+		initialTime = whenIsIt.getTime();
+			
+		// TODO
+		// Detect and discard outliers according to Chauvenet's  criterion.
+
+		// From here, datapoint is valid. Advance beat count.
+		beats ++;
+
+		// Compute mean.
+		mean = 0;
+		for (i = 0; i < dataCount; i = i+1)
+		{
+			mean = mean + timing[i] / dataCount;
+		}
+		// Since the mean is linear function, it is not necessary to
+		// process every datapoint each time. However, if outliers are
+		// discarded during the process (TODO) the entire mean will
+		// need to be re-evaluated.
+
+		// Compute standard error of the mean.
+		variance = 0;
+		for (i = 0; i < dataCount; i = i+1)
+		{
+			variance = variance + Math.pow((mean - timing[i]), 2);
+		}
+		sterror = Math.sqrt((1/(dataCount*(dataCount - 1)))*variance);
+
+		// Determine current precision and round figures accordingly.
+		if (sterror < 1) { order = .1; }
+		else if (sterror < 10) { order = 1; }
+		else { order = 10; }
+		roundMean = (Math.round(mean / order)) * order;
+		roundSterror = (Math.round(sterror / order)) * order;
+		if (dataCount < 2) { roundSterror = null; } // avoid NaN
+
+		// Display results.
+		dispMean.value = roundMean;
+		dispBeats.value = beats;
+		dispSterror.value = roundSterror;
+
+		if (roundSterror <= desiredPrecision && dataCount > 2) { colorize(2); }
+		else { colorize(1); }
+	}
+	initializeReset();
+	return true;
+}
+
+document.onkeypress = analyze;
+
+//  End -->
+</SCRIPT>
+<CENTER>
+<P>Tap any key to the beat.</P>
+BPM <INPUT style="background-color: rgb(136, 170, 255);" style="background-color: rgb(255, 255, 153);" readonly="readonly" id="dispMean" size="12"> &plusmn; <INPUT style="background-color: rgb(136, 170, 255);" style="background-color: rgb(255, 255, 153);" readonly="readonly" id="dispSterror" size="12"><BR>
+Beats <INPUT style="background-color: rgb(136, 170, 255);" style="background-color: rgb(255, 255, 153);" readonly="readonly" id="dispBeats" size="12"><BR>
+
+<P>With time, the measurement achieves greater <SPAN style="background-color: rgb(119, 255, 119);">precision</SPAN>.</P>
+<P>After a two second pause, the system <SPAN style="background-color: rgb(136, 170, 255);">resets</SPAN> for a new tempo.</P>
+<P> &nbsp; </P>
+<P>Challenge:<BR> Precision up to 0.1 BPM is allowed, but it will only display if the statistical uncertainty<BR> is less than 1 BPM. (Otherwise, such precision is meaningless.)</P>
+</CENTER>

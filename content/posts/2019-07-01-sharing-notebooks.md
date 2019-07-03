@@ -1,7 +1,7 @@
 ---
 title: Sharing Jupyter Notebooks
 date: 2019-07-02
-draft: true
+preview: true
 ---
 
 "Who is my audience?" is a good question to begin with. We could refine that to,

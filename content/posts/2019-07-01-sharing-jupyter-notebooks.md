@@ -43,8 +43,8 @@ have all the right libraries and other resources already available, this might
 environment to run the notebook in. In this sense, sharing notebooks on
 [nbviewer](nbviewer.org) lands in about the same place as email&mdash; one gets
 a better user experience in exchange for learning about nbviewer, but the
-notebook does not encode anything about the environment it should be run in. To
-provide the recipient with this information, the sender can provide a
+notebook still does not encode anything about the environment it should be run
+in. To provide the recipient with this information, the sender can provide a
 [Reproducible Execution Environment Specification](https://repo2docker.readthedocs.io/en/latest/specification.html) (REES),
 which may be as simple as a ``requirements.txt`` file or as custom as a
 ``Dockerfile``. It is a significant step up in effort or expertise required from
@@ -56,11 +56,12 @@ What new tools can we imagine filling this space? Some quetsions to consider:
 * Is the notebook being "published" for long-term reuse by many people (the
   Binder use case) or quickly transferred between a small number of people
   for short-term collaboration (the email use case)?
-* Is the unit being shared one notebook or a set of notebooks and associated
-  data files?
+* Is the unit being shared just *one* notebook or a collection of notebooks? Are
+  there additional files necessary to run them?
 * Does the notebook have specific or specialized resource requirements?
 
-For low-effort sharing between two users on the same JupyterHub, I propose
+For low-effort, short- term sharing between two users on the same JupyterHub, I
+have prototyped
 [JupyterHub Share Link](https://github.com/danielballan/jupyterhub-share-link),
 which provides functionality similar to Google Docs' feature:
 "Anyone with link can read" (and make a copy). By assuming that the users are
@@ -70,10 +71,12 @@ open the recipient's notebook in the right environment. See link for details.
 ![JupyterHub Share Link Demo GIF](https://github.com/danielballan/jupyterhub-share-link/raw/master/demo.gif?raw=true)
 
 For sharing that is longer-term or between users are not logged into the same
-Hub, we need a more explicit list of requirements from the sender. How can move
-that to the left on our diagram? We can look for ways for make it easier for the
-sender to define a REES by adding a UI and other tooling. Placed on the space of
-sender and recipient effort, these new ideas might fall roughly like:
+Hub, we need a more explicit list of requirements from the sender to enable the
+recipient to reconstruct a working environment. Currently, the best option there
+is to define a REES, which is robust but takes some effort and a little
+expertise. That could potentially be made easier by adding UI or other tooling.
+Placed on the space of sender and recipient effort, these ideas might be placed
+like:
 
 ![new ideas placed in the space of sender and recipient effort](/static/images/effort-new-ideas.svg)
 

@@ -48,7 +48,8 @@ in. To provide the recipient with this information, the sender can provide a
 [Reproducible Execution Environment Specification](https://repo2docker.readthedocs.io/en/latest/specification.html) (REES),
 which may be as simple as a ``requirements.txt`` file or as custom as a
 ``Dockerfile``. It is a significant step up in effort or expertise required from
-the sender.
+the sender, in exchange for a stronger guarantee that the recipient will be able
+to run the notebook without a lot of trial and error.
 
 What new tools can we imagine filling this space? Some quetsions to consider:
 

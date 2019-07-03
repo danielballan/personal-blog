@@ -8,7 +8,7 @@ How can we expand and improve the tools for sharing Jupyter notebooks?
 
 "Who is my audience?" is a good question to begin with. Sometimes we want to
 share notebooks within teams, and sometimes we want to publish them to the world.
-For example, if you are the sole user and you only need the code for a day, you
+If you are the sole user and you only need the code for a day, you
 might use a Jupyter notebook as a messy scratch pad, executing cells out of
 order and not bothering to leave a record of the software dependencies (what
 libraries, what versions, etc.).  But if the notebook is meant to be used for a
@@ -52,7 +52,7 @@ be run in.
 share a custom computing environment, bundling up multiple notebooks,
 associated support files, and specified software requirements. With one click,
 recipients are dropped into a Jupyter server with some free computational
-resources and temporary storage, and they can start working immedately. Enabling
+resources and temporary storage, and they can start working immediately. Enabling
 this requires the sender to write down what their requirements are, which may be
 as simple as a ``requirements.txt`` file or as custom as a ``Dockerfile``. The
 Binder team calls this a [Reproducible Execution Environment Specification](https://repo2docker.readthedocs.io/en/latest/specification.html)
@@ -74,7 +74,7 @@ Some questions to consider:
   there additional files necessary to run them?
 * Does the notebook have specific or specialized resource requirements?
 
-For low-effort, short- term sharing between two users on the same JupyterHub, we
+For low-effort, short-term sharing between two users on the same JupyterHub, we
 have prototyped
 [danielballan/jupyterhub-share-link](https://github.com/danielballan/jupyterhub-share-link),
 which provides functionality similar to Google Docs' feature:

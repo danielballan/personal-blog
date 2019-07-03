@@ -54,7 +54,7 @@ What new tools can we imagine filling this space? Some quetsions to consider:
 
 * Are the sender and recipient on the same JupyterHub?
 * Is the notebook being "published" for long-term reuse by many people (the
-  nbviewer use case) or quickly transferred between a small number of people
+  Binder use case) or quickly transferred between a small number of people
   for short-term collaboration (the email use case)?
 * Is the unit being shared one notebook or a set of notebooks and associated
   data files?

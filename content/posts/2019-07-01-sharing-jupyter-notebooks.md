@@ -51,8 +51,13 @@ be run in.
 share a custom computing environment, bundling up multiple notebooks,
 associated support files, and specified software requirements. With one click,
 recipients are dropped into a Jupyter server with some free computational
-resources and temporary storage, and they can start working immediately. Enabling
-this requires the sender to write down what their requirements are, which may be
+resources and temporary storage, and they can start working immediately.
+With the new
+[Voilà](https://blog.jupyter.org/and-voil%C3%A0-f6a2c08a4a93) nontechnical users
+can be directed to a standardalone web application / dashboard built from a
+notebook.
+
+Enabling this requires the sender to write down what their requirements are, which may be
 as simple as a ``requirements.txt`` file or as custom as a ``Dockerfile``. The
 Binder team calls this a [Reproducible Execution Environment Specification](https://repo2docker.readthedocs.io/en/latest/specification.html)
 (REES).  Composing a REES is a modest but significant step up in effort or

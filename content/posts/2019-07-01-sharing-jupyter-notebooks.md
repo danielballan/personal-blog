@@ -41,7 +41,8 @@ have all the right libraries and other resources already available, this might
 *just work™*. But more often the recipient needs to sort out the right
 environment to run the notebook in. In this sense, sharing notebooks on
 [nbviewer](nbviewer.org) or
-[bookstore](https://bookstore.readthedocs.io/en/latest/)
+[bookstore](https://bookstore.readthedocs.io/en/latest/) or my own
+[nbexamples](http://github.com/danielballan/nbexamples)
 lands in about the same place as email&mdash; one gets
 a better user experience in exchange for learning about a more specific tool,
 but the notebook still does not encode anything about the environment it should
@@ -88,7 +89,7 @@ open the recipient's notebook in the right environment. See link for details.
 
 ![JupyterHub Share Link Demo GIF](https://github.com/danielballan/jupyterhub-share-link/raw/master/demo.gif?raw=true)
 
-For sharing that is longer-term or between users are not logged into the same
+For sharing that is longer-term or between users who are not logged into the same
 Hub, we need a more explicit list of requirements from the sender to enable the
 recipient to reconstruct a working environment. Currently, the best option there
 is to define a REES. That could potentially be made easier by adding UI or other

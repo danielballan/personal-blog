@@ -41,10 +41,10 @@ email them. Consider where that fits in this space. If the recipient happens to
 have all the right libraries and other resources already available, this might
 *just work™*. But more often the recipient needs to sort out the right
 environment to run the notebook in. In this sense, sharing notebooks on
-[nbviewer](nbviewer.org) fits in about the same space&mdash; one gets a better
-user experience in exchange for learning about nbviewer, but the notebook does
-not encode anything about the environment it should be run in. To provide the
-recipient with this information, the sender can provide a
+[nbviewer](nbviewer.org) lands in about the same place as email&mdash; one gets
+a better user experience in exchange for learning about nbviewer, but the
+notebook does not encode anything about the environment it should be run in. To
+provide the recipient with this information, the sender can provide a
 [Reproducible Execution Environment Specification](https://repo2docker.readthedocs.io/en/latest/specification.html) (REES),
 which may be as simple as a ``requirements.txt`` file or as custom as a
 ``Dockerfile``. It is a significant step up in effort or expertise required from

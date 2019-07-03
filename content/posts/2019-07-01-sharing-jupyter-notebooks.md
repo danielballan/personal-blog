@@ -1,7 +1,6 @@
 ---
 title: Sharing Jupyter Notebooks
-date: 2019-07-02
-preview: true
+date: 2019-07-03
 ---
 
 How can we expand and improve the tools for sharing Jupyter notebooks?

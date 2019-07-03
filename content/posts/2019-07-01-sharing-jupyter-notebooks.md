@@ -41,10 +41,12 @@ email them. Consider where that fits in this space. If the recipient happens to
 have all the right libraries and other resources already available, this might
 *just work™*. But more often the recipient needs to sort out the right
 environment to run the notebook in. In this sense, sharing notebooks on
-[nbviewer](nbviewer.org) lands in about the same place as email&mdash; one gets
-a better user experience in exchange for learning about a more specific tool, but the
-notebook still does not encode anything about the environment it should be run
-in.
+[nbviewer](nbviewer.org) or
+[bookstore](https://bookstore.readthedocs.io/en/latest/)
+lands in about the same place as email&mdash; one gets
+a better user experience in exchange for learning about a more specific tool,
+but the notebook still does not encode anything about the environment it should
+be run in.
 
 [Binder](https://mybinder.readthedocs.io/en/latest/) enables senders to
 share a custom computing environment, bundling up multiple notebooks,

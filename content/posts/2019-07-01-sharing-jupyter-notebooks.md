@@ -9,7 +9,7 @@ preview: true
 they rely on it to work?" 
 
 For example, if you are the only user and you only need the code for a day, you
-might use a a Jupyter notebook as a messy scratch pad, executing cells out of
+might use a Jupyter notebook as a messy scratch pad, executing cells out of
 order and not bothering to leave a record of the software dependencies (what
 libraries, what versions, etc.).  But if the notebook is meant to be used for a
 long time by many people, you might clean up the code a bit, ensure the cells

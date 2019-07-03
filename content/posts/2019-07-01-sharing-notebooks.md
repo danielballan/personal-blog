@@ -8,11 +8,12 @@ preview: true
 "How far will this code go? How many people will use it? And for how long will
 they rely on it to work?" 
 
-For example, if you are the only user and you only need the code for a day, you might use the
-notebook document as a messy scratch pad with out-of-order execution and no
-clear record of the software dependencies (what libraries, what versions, etc.).
-But if the notebook is meant to be used for a long time by many people, you might
-clean up the code a bit, ensure it executes top-to-button,
+For example, if you are the only user and you only need the code for a day, you
+might use a a Jupyter notebook as a messy scratch pad, executing cells out of
+order and not bothering to leavea record of the software dependencies (what
+libraries, what versions, etc.).  But if the notebook is meant to be used for a
+long time by many people, you might clean up the code a bit, ensure the cells
+execute top-to-button,
 [move any large code chunks out of the notebook and into traditional Python modules](https://nsls-ii.github.io/scientific-python-cookiecutter/),
 put the notebook in version control using
 [nbdime](https://nbdime.readthedocs.io/en/latest/),
@@ -33,7 +34,7 @@ Considering sharing Jupyter notebooks in particular, we could further ask, how
 much effort does the *sender* invest to share it and how much effort does the
 *recipient* invest to get it working for them?
 
-![phase space of how far code goes](/static/images/effort-status-quo.svg)
+![current tools placed in the space of sender and recipient effort](/static/images/effort-status-quo.svg)
 
 The most obvious way for beginners to send and receive notebooks is to
 email them. Consider where that fits in this space. If the recipient happens to
@@ -79,8 +80,8 @@ that fully automating this is not worthwhile because the result will always be
 brittle. Maybe a tool that can that can provide a *guess* as a starting point to
 be reviewed and refined by the sender could be viable.
 
-We can also make the tools behind Binder applicable in other contexts. For
-example, we could imagine:
+We can also make the tools behind Binder directly applicable in more contexts.
+For example, we could imagine:
 
 * a JupyterHub Service that builds a container from a REES without requiring Kubernetes
 * an alternate builder that turns a REES into conda environment, for the subset
@@ -90,3 +91,10 @@ example, we could imagine:
 
 We intend to prototype these ideas in
 [Jupyter REES Service](https://github.com/danielballan/jupyter-rees-service).
+
+Placed on the space of sender and recipient effort, these new ideas might fall
+roughly like:
+
+![new ideas placed in the space of sender and recipient effort](/static/images/effort-new-ideas.svg)
+
+What else can we consider in this space?

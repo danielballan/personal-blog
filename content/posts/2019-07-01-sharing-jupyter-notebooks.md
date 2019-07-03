@@ -72,16 +72,8 @@ open the recipient's notebook in the right environment. See link for details.
 For sharing that is longer-term or between users are not logged into the same
 Hub, we need a more explicit list of requirements from the sender. How can move
 that to the left on our diagram? We can look for ways for make it easier for the
-sender to define a REES by adding a UI and other tooling.
-
-As an aside, it is tempting to aim for a tool that can detect all the software
-dependencies automatically with no effort by the sender. My personal view is
-that fully automating this is not worthwhile because the result will always be
-brittle. Maybe a tool that can that can provide a *guess* as a starting point to
-be reviewed and refined by the sender could be viable.
-
-Placed on the space of sender and recipient effort, these new ideas might fall
-roughly like:
+sender to define a REES by adding a UI and other tooling. Placed on the space of
+sender and recipient effort, these new ideas might fall roughly like:
 
 ![new ideas placed in the space of sender and recipient effort](/static/images/effort-new-ideas.svg)
 

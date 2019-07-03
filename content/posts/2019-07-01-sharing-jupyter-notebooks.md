@@ -4,10 +4,10 @@ date: 2019-07-02
 preview: true
 ---
 
-"Who is my audience?" is a good question to begin with. We could refine that to,
-"How far will this code go? How many people will use it? And for how long will
-they rely on it to work?" 
+How can we expand and improve the tools for sharing Jupyter notebooks?
 
+"Who is my audience?" is a good question to begin with. Sometimes we want to
+share notebooks within teams, and sometimes we want to publish them to the world.
 For example, if you are the only user and you only need the code for a day, you
 might use a Jupyter notebook as a messy scratch pad, executing cells out of
 order and not bothering to leave a record of the software dependencies (what

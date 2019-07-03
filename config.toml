@@ -2,6 +2,7 @@ baseURL = "https://blog.danallan.com/"
 languageCode = "en-us"
 title = "DanAllan.com"
 theme = "temple"
+disqusShortname = "danielballan"
 
 [author]
   name = "Daniel Allan"

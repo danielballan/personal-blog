@@ -100,5 +100,6 @@ These ideas grew out of conversations at the
 [Jupyter Community Workshop for Scientific User Facilities and HPC](https://blog.jupyter.org/jupyter-community-workshop-jupyter-for-scientific-user-facilities-and-high-performance-computing-3afa4a990086). Some of us plan to prototype them in the repository
 [danielballan/jupyter-rees-service](https://github.com/danielballan/jupyter-rees-service).
 
-What regions in the space of sender and recipient effort and code lifecycle are
-important?
+What regions in the space of sender and recipient effort and "how far code goes"
+are important? How else can we extend or recombine the components of Jupyter to
+create well-matched solutions?

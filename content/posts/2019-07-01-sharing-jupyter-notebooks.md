@@ -56,12 +56,14 @@ resources and temporary storage, and they can start working immediately.
 With the new
 [Voilà](https://blog.jupyter.org/and-voil%C3%A0-f6a2c08a4a93), nontechnical users
 can be directed to a standardalone web application / dashboard built from a
-notebook.
+notebook. [PyViz Panel](http://panel.pyviz.org/) is doing interesting work in
+in an overlapping space, capturing software dependencies, tests, and more, and
+presenting recipients with a static or interactive view.
 
 Enabling this requires the sender to write down what their requirements are, which may be
 as simple as a ``requirements.txt`` file or as custom as a ``Dockerfile``. The
 Binder team calls this a [Reproducible Execution Environment Specification](https://repo2docker.readthedocs.io/en/latest/specification.html)
-(REES).  Composing a REES is a modest but significant step up in effort or
+(REES). Composing a REES is a modest but significant step up in effort or
 expertise required from the sender in exchange for a stronger guarantee that
 the recipient will be able to run the notebook without a lot of trial and error.
 

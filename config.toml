@@ -3,6 +3,9 @@ languageCode = "en-us"
 title = "DanAllan.com"
 theme = "temple"
 disqusShortname = "danallan"
+pygmentsCodeFences = true
+pygmentsUseClassic = true
+PygmentsStyle = "default"
 
 [author]
   name = "Daniel Allan"

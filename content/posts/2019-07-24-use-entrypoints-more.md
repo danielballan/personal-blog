@@ -123,14 +123,15 @@ disadvantages:
 
 ### Namespace Packages
 
-Another project that I contribute to, a data export tool called
-[suitcase](https://blueskyproject.io/suitcase), uses Python namespace packages.
-A suitcase package is expected to define a namespace package ``suitcase.X`` (for
-some ``X``) and that package is expected to contain callable objects with
-certain names and signatures. Like the naming convention approach, this excludes
-pre-existing packages from participating in suitcase's plugin mechanism. 
-Additionally, namespace packages are fragile: if any package fails to implement
-namespace packaging correctly, it can break all the other installed
+A data export tool called
+[suitcase](https://blueskyproject.io/suitcase) uses
+[Python namespace packages](https://packaging.python.org/guides/packaging-namespace-packages/).
+Each participating package is expected to define a namespace package
+``suitcase.X`` (for some ``X``) and that package is expected to contain callable
+objects with certain names and signatures. Like the naming convention approach,
+this excludes pre-existing packages from participating in suitcase's plugin
+mechanism.  Additionally, namespace packages are fragile: if any package fails
+to implement namespace packaging correctly, it can break all the other installed
 ``suitcase.*`` packages.
 
 ## Name Collisions
@@ -173,7 +174,7 @@ The function ``entrypoints.get_group_all('intake.drivers')`` returns a list with
 there. Intake resolves this with a configuration file and some command line
 tools for reviewing the options and specifying priority.
 
-## Conclusion
+## Where else should we use this?
 
 Entrypoints are a good language feature for advertising objects in a library
 that participate in a plugin mechanism. I have applied it to intake, and I

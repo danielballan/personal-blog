@@ -175,8 +175,12 @@ tools for reviewing the options and specifying priority.
 
 ## Conclusion
 
-Entrypoints is the best language feature for advertising objects in a library
-that participate in a plugin mechanism.
+Entrypoints are a good language feature for advertising objects in a library
+that participate in a plugin mechanism. I have applied it to intake, and I
+propose applying it to suitcase. There is also
+[discussion](https://github.com/jupyter/notebook/issues/2894) about using in
+more places in the Jupyter ecosystem. Let's keep an eye out for situations where
+a custom entrypoint is the best tool for the job.
 
 *Thanks to Min RK and Matthias Bussonnier for bringing this feature to my
 attention in their review of

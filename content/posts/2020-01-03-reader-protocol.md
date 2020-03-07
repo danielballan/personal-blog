@@ -49,7 +49,7 @@ backed by dask, `reader` can inexpensively and promptly return one of these
 objects with reasonably-sized internal chunks and leave it to downstream code to
 decide if and when to materialize them, in whole or in part.
 
-## Use Entrypoints to Make Readers Discoverable
+## Use Entrypoints to make Readers discoverable
 
 Libraries that implement this Reader API can use
 [entrypoints](https://packaging.python.org/specifications/entry-points/) to
@@ -84,14 +84,14 @@ such objects and an associated `entry_points` declaration. Importantly, they
 could do so without adding a new dependency on or connection to any
 particular library.
 
-## Build Tools Dispatch to a Compatible Reader
+## Dispatch based on resource type to a compatible Reader
 
 On a parallel track, other libraries that focus on generalizing I/O and
 abstracting over file formats, such as
 [intake](https://intake.readthedocs.io/) and
 [pims](http://soft-matter.github.io/pims), could develop tooling that uses this
 protocol. Using Thomas Kluyver's slim library
-[entrypoints](https://packaging.python.org/specifications/entry-points/),
+[entrypoints](https://entrypoints.readthedocs.io/),
 they could search the Python packages in a user's environment to discover their
 ``'TBD.readers'`` and their respective designated ``FORMAT``. (The magic of
 entrypoints is that this search can be performed inexpensively, without
@@ -137,7 +137,7 @@ may be the right idea: after the initial dispatch based on MIME type, the reader
 registered for that MIME type may inspect the file further and do a second layer
 of dispatch based on its contents/layout.
 
-## Managing a Variety of Return Types
+## Managing a variety of return types
 
 Is it possible to standardize one return type for `read()`? It seems that
 the Reader protocol would need to support at least tabular and non-tabular data:
@@ -163,11 +163,11 @@ fully-qualified name of the type returned by `read()`, as in
 reader.container == 'dask.dataframe.core.DataFrame'
 ```
 
-This diverges from the neat simplicity of the original analogy---"Readers are
-just like files that return SciPy data structures when you read them."---but
-it's a reasonable mitigation of the return instability of ``read()``. The
-complete Reader API would still be quite succinct and could be implemented in
-less than 100 LOC in most cases.
+This diverges from the original analogy---"Readers are just like files that
+return SciPy data structures when you read them."---but it's a reasonable
+mitigation of the return instability of ``read()``. The complete Reader API
+would still be quite succinct and could be implemented in less than 100 LOC in
+most cases.
 
 ```py
 class SomeReader:
@@ -183,5 +183,57 @@ class SomeReader:
         ...
 ```
 
-Alternatively, we could consider using type annotations, but it may be wiser to
-wait until they have more a foothold in the SciPy ecosytem.
+Alternatively, we could consider using type annotations to mark up the return
+value of `read()`, but it may be wiser to wait until type annotations become
+more established in the SciPy ecosystem in general.
+
+## Simplicity is the key to scaling
+
+No one has the resources to write Readers for every bespoke format in common
+use in the SciPy ecosystem. Microscopy formats alone---my home turf---comprise a
+wilderness of persnickety variation.
+
+The Reader API is simple enough that the SciPy's ecosystem's distributed
+contributor base can quickly grasp it and add support the many varied formats in
+use---if they share the goal of making it easier to manage multiple formats and
+believe that Reader adds value.
+
+Prior similar work, including PIMS readers, intake DataSources, and databroker
+handlers, had a similar goal and some overlap in the approach, but none combine
+all of:
+
+* A very small API that rhymes with the familiar usage for open files in Python
+* Declaring `entry_points` for zero-dependency coordination between libraries
+* MIME types to facilitate automated type detection and dispatch where possible
+* Leveraging dask to leave any sub-selection / slicing to downstream code rather
+  than managing in the individual plugins
+
+## First Prototypes
+
+* A prototype of one Reader (wrapping `tifffile`) and a simple example of
+  MIME type dispatch have been sketched in a
+  [proposal for PIMS](https://github.com/danielballan/pims2-prototype).
+* Two Readers (fixed-width column text and TIFF again) and a mechanism for
+  intergrating with intake's `DataSource` abstraction have been sketched in
+  [danielballan/reader_prototype](https://github.com/danielballan/reader_prototype).
+
+## How should we organize?
+
+If this idea gains buy-in from library maintainers, where should we document and
+advertise this entrypoint and what can be done with it?  What should be the
+`TBD` in `'TBD.readers'`? Entrypoints are generally scoped to a package, as in
+`'nbconvert.exporters'` or `'pandas_plotting_backends'` to avoid potential
+collisions.
+
+We could center on an I/O-abstracting library such as `'intake.readers'` or
+`'pims.readers'`. (To be clear, it is an open question whether the `Reader` idea
+will be incorporated into either.) But that risks giving the incorrect
+impression that the functionality is tied to a particular library, when in fact
+these libraries could go away and the entrypoint would still be useful.
+
+With the necessary community support, we might use a more generic namespace
+like `'scikit.readers'`, `'scipy.readers'`, or `'pydata.readers'` to clearly
+communicate that any project can declare such an entrypoint with no special
+dependencies, and any library can developer discovery/dispatch by either
+importing or reimplementing part of
+[entrypoints](https://entrypoints.readthedocs.io/).

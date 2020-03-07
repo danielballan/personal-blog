@@ -153,7 +153,7 @@ be used to choose between them. Different libraries can make different choices
 here; we don't need to pick one "correct" priority. For example, perhaps the
 richest representation would be chosen, with ``xarray.DataArray`` taking
 precedence over ``numpy.ndarray`` if available; and/or perhaps the laziest
-represenation would win, with ``dask.dataframe.DataFrame`` taking precedence
+representation would win, with ``dask.dataframe.DataFrame`` taking precedence
 over ``pandas.DataFrame``. To facilitate this, we might specify one more
 required attribute on ``Reader``. Borrowing an idea from intake, we could
 require Readers to carry a ``container`` attribute, with the string of the
@@ -183,5 +183,5 @@ class SomeReader:
         ...
 ```
 
-Alternatively, we could consider type annotations here, although it may be wise
-to wait until they have more a foothold in the SciPy ecosytem.
+Alternatively, we could consider using type annotations, but it may be wiser to
+wait until they have more a foothold in the SciPy ecosytem.

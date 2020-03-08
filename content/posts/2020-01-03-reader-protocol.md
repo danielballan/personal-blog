@@ -138,7 +138,8 @@ def open(file, *args, **kwargs):
     mimetype = guess_mime_type(file)
     # Import just the Reader classes of interest.
     compatible_reader_classes = [ep.load() for ep in groups[mimetype]]
-    # Choose among the compatible readers....see discussion below.
+    # Choose among the compatible readers....
+    # See discussion in next section.
     ...
     return reader_class(file, *args, **kwargs)
 ```

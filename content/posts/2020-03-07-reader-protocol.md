@@ -230,9 +230,9 @@ No one has the resources to write Readers for every bespoke format in common
 use in the SciPy ecosystem. Microscopy formats alone---my home turf---comprise a
 wilderness of persnickety variation.
 
-If members of SciPy ecosystem's distributed contributor base also feel the pain
-of managing multiple file formats and believe that Reader adds value, they will
-be able to quickly grasp its small API and may begin adding support in the
+If members of the SciPy ecosystem's distributed contributor base also feel the
+pain of managing multiple file formats and believe that Reader adds value, they
+will be able to quickly grasp its small API and may begin adding support in the
 codebases that their community already uses.
 
 Prior similar work, including

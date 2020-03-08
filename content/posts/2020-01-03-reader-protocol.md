@@ -3,9 +3,10 @@ title: A Reader Protocol for the SciPy Ecosystem
 date: 2020-03-07
 ---
 
-*Summary: The SciPy ecosystem would benefit from a file-like protocol that
-returns (potentially lazy) SciPy/PyData data structures when read. This can be
-achieved in a distributed way without adopting any particular library.*
+*Summary: To make handling data across multiple file formats more seamless, the
+SciPy ecosystem would benefit from a file-like protocol that returns
+(potentially lazy) SciPy/PyData data structures when read. This can be achieved
+in a distributed way without adopting any particular library.*
 
 Real scientific data analysis typically involves combining data from multiple
 instruments, research groups, or techniques, each with their own storage formats

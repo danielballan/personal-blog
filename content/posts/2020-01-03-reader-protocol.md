@@ -53,32 +53,38 @@ decide if and when to materialize them, in whole or in part.
 
 ## Use Entrypoints to make Readers discoverable
 
-Libraries that implement this Reader API can use
+Libraries can use
 [entrypoints](https://packaging.python.org/specifications/entry-points/) to
-declare them.
+declare any objects they define that satisfy the Reader API.
+Entrypoints were *formerly* a feature/quirk of setuptools but are now officially
+part of the PyPA specification, thanks to efforts by Thomas Kluyver.
 
 ```python
 # setup.py
 
 setup(
     ...
-    entry_points = {'TBD.readers' ['FORMAT = some_package:SomeReader']}
+    entry_points = {
+        'TBD.readers': [
+            'FORMAT = some_package:SomeReader',
+            'ANOTHER_FORMAT = some_package:AnotherReader'
+        ]
+    }
 )
 ```
 
-Entrypoints were *formerly* a feature/quirk of setuptools but are now officially
-part of the PyPA specification, thanks to efforts by Thomas Kluyver. The name of
-the entrypoint group (`'TBD.readers'` here) is discussed further below.
+A name for the entrypoint group (`'TBD.readers'` here) is considered further
+below.
 
-New libraries may be created to implement this interface on top of existing I/O
-libraries. For example, a new `pandas_reader` library could be published that
-wraps `pandas.read_csv` and/or `dask.dataframe.read_csv` in the Reader API. In
-time, if that works well, established libraries with I/O functionality like
-pandas and tifffile could adopt these objects and an associated `entry_points`
-declaration.  Importantly, they could do so **without adding any dependency on
-or connection to any particular library**.
+New libraries may be created to implement the Reader interface on top of
+existing I/O libraries. For example, a new `pandas_reader` library could be
+published that wraps `pandas.read_csv` and/or `dask.dataframe.read_csv` in the
+Reader API. In time, if that works well, established libraries with I/O
+functionality like pandas and tifffile could adopt these objects themselves and
+an associated `entry_points` declaration.  Importantly, they could do so
+**without adding any dependency on or connection to any particular library**.
 
-For the ``FORMAT`` it would be natural to specify a MIME type string.
+For the ``FORMAT`` it would be natural to standardize on using MIME type.
 IANA maintains an official registry of formats (e.g. ``'image/tiff'``), and it
 also defines a standard for adding application-specific formats outside of the
 official standard (e.g. ``'application/x-hdf'``).
@@ -119,7 +125,7 @@ open('table.csv').read()  # dask.dataframe.DataFrame
 open('array.npz').read()  # numpy.ndarray
 open('image_stack.tiff').read()  # xarray.DataArray
 open('image_series/*.tiff').read()  # xarray.DataArray
-open('video.mov').read()  # xarray.DataArray
+open('video.mp4').read()  # xarray.DataArray
 ```
 
 where an implementation of `open` may be

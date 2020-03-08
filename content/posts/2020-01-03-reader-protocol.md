@@ -14,9 +14,8 @@ instruments, research groups, or techniques, each with their own storage formats
 
 Established libraries provide a succinct enough way to load many formats into
 appropriate data structures, such as ``pandas.read_csv`` or
-``dask.dataframe.read_csv`` and ``tifffile.imread`` or ``dask_image.imread``.
-
-Can we make it easier to discover the available readers for a given format
+``dask.dataframe.read_csv`` and ``tifffile.imread`` or ``dask_image.imread``,
+but can we make it easier to discover the available readers for a given format
 and make handling multiple formats more seamless?
 
 ## A Reader API that rhymes with Python's file API

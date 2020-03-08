@@ -47,7 +47,7 @@ Before the widespread adoption of dask for deferred I/O and computation, this
 pattern would have had limited scope because pulling up large array data all at
 once is not viable for many real datasets. But if ``reader.read()`` may return a
 `dask.array.Array`, a `dask.dataframe.DataFrame`, or an `xarray` data structure
-backed by dask, `reader` can inexpensively and promptly return one of these
+backed by dask, `reader` can inexpensively and promptly construct one of these
 objects with internal chunks and leave it to downstream code to
 decide if and when to materialize them, in whole or in part.
 
@@ -86,7 +86,7 @@ an associated `entry_points` declaration.  Importantly, they could do so
 
 For the ``FORMAT`` it would be natural to standardize on using MIME type.
 IANA maintains an official registry of formats (e.g. ``'image/tiff'``), and it
-also provides a method for defining application-specific formats outside of the
+provides a method for defining application-specific formats outside of the
 official registry (e.g. ``'application/x-hdf'``).
 Although MIME types are not as widely known to the scientist user--programmers
 in the SciPy ecosystem as they are to web developers, MIME types do already

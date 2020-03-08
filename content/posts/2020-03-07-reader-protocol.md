@@ -132,7 +132,7 @@ where an implementation of `open` may be
 
 ```python
 import entrypoints
-groups = entrypoints.get_groups_all('TBD.readers')
+groups = entrypoints.get_group_all('TBD.readers')
 
 def open(file, *args, **kwargs):
     mimetype = guess_mime_type(file)

@@ -193,7 +193,7 @@ Alternatively, we could consider using type annotations to mark up the return
 value of `read()`, but seems wiser to wait until type annotations become
 more established in the SciPy ecosystem in general.
 
-## Simplicity is the key to scaling
+## Designed for community-based scaling
 
 No one has the resources to write Readers for every bespoke format in common
 use in the SciPy ecosystem. Microscopy formats alone---my home turf---comprise a

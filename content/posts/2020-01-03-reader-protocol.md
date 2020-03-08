@@ -72,12 +72,12 @@ New libraries may be created to implement this interface on top of existing I/O
 libraries. For example, a new `pandas_reader` library could be published that
 wraps `pandas.read_csv` and/or `dask.dataframe.read_csv` in the Reader API. In
 time, if that works well, established libraries with I/O functionality like
-pandas and tifffile could add such objects and an associated `entry_points`
+pandas and tifffile could adopt these objects and an associated `entry_points`
 declaration.  Importantly, they could do so **without adding any dependency on
 or connection to any particular library**.
 
 For the ``FORMAT`` it would be natural to specify a MIME type string.
-IANA maintains an official registry of formats (e.g. ``'image/png'``), and it
+IANA maintains an official registry of formats (e.g. ``'image/tiff'``), and it
 also defines a standard for adding application-specific formats outside of the
 official standard (e.g. ``'application/x-hdf'``).
 Although MIME types are not as well known to the scientific user--programmers
@@ -108,7 +108,7 @@ standard library module
 external libraries [puremagic](https://pypi.org/project/puremagic/),
 [python-magic](https://pypi.org/project/python-magic/), or
 [filetype](https://pypi.org/project/filetype/). Then, dispatching on MIME type
-to a suitable enable the succinct usage
+to a suitable Reader enables a succinct usage like
 
 ```python
 from some_library import open
@@ -146,11 +146,11 @@ of dispatch based on its contents/layout.
 Is it possible to standardize one return type for `read()`? It seems that
 the Reader protocol would need to support at least tabular and non-tabular data:
 certain operations make sense on DataFrames but not on N-D structures. Also,
-while dask is a core part of the story for large data sets, in certain domains
-Readers that return an in-memory data structures may be appealing, either to
-avoid a dask dependency or for plain simplicity. Therefore it seems unlikely
-we can agree on less than two or perhaps four data structures. Having more than
-1, we may as well support N.
+while dask is a core part of the story for large data sets, in domains where
+data sets are generally small, Readers that return an in-memory data structures
+may be appealing, either to avoid a dask dependency or for plain simplicity.
+Therefore it seems unlikely we can agree on less than two or perhaps four data
+structures. Having more than 1, we may as well support N.
 
 When multiple readers for a given MIME type are discovered, a function like
 `open` could use a heuristic to choose between them or present options to the
@@ -162,18 +162,18 @@ available; and/or perhaps the laziest representation would win, with
 
 To facilitate this, we need Readers tell us which data structure they return
 from `read()`. Adapting an idea from intake, we could require Readers to define
-a `container` attribute with the string of the fully-qualified name of the
-type returned by `read()`, as in
+a `container` attribute with the fully-qualified name of the type returned by
+`read()`, as in
 
 ```py
 reader.container == 'dask.dataframe.core.DataFrame'
 ```
 
-This diverges from the original analogy---"Readers are like files that return
-SciPy data structures when you read them,"---but it reconciles with the return
-type instability of ``read()``. The complete Reader API would still be succinct
-and could be implemented in less than 100 lines of code in most cases (building
-on top of existing I/O code).
+This adds ones more thing to implement and diverges from the original
+analogy---"Readers are like files that return SciPy data structures when you
+read them,"---but it reconciles with the return type instability of ``read()``.
+The complete Reader API would still be succinct and could be implemented in less
+than 100 lines of code in most cases (building on top of existing I/O code).
 
 ```py
 class SomeReader:
@@ -204,14 +204,17 @@ of managing multiple file formats and believe that Reader adds value, they will
 be able to quickly grasp its small API and may begin adding support in the
 codebases that their community already uses.
 
-Prior similar work, including PIMS readers, intake DataSources, and databroker
-handlers, had a similar goal and some overlap in their approach, but none
-combine all of:
+Prior similar work, including
+[PIMS readers](https://soft-matter.github.io/pims/v0.4.1/custom_readers.html),
+[intake DataSources](https://intake.readthedocs.io/en/latest/api_base.html#intake.source.base.DataSource),
+and
+[databroker handlers](https://blueskyproject.io/event-model/external.html#handlers),
+had similar goals and some overlap in their approach, but none combine all of:
 
 * A very small API that rhymes with the usage for opening and reading files in
   Python
 * Declaring `entry_points` for zero-dependency coordination between libraries
-* Delcaring MIME types to facilitate dispatch by file type
+* Declaring MIME types to facilitate dispatch by file type
 * Leveraging dask to leave any sub-selection / slicing to downstream code rather
   than managing it internally
 
@@ -258,7 +261,7 @@ will be incorporated into either.) But that risks giving the incorrect
 impression that the functionality is tied to a particular library, when in fact
 these libraries could go away and the entrypoint would still be useful.
 
-With the necessary community support (perhaps a NEP process?) we might use a
+With the necessary community support (perhaps a NEP process?) we might claim a
 more generic namespace like `'scikit.readers'`, `'scipy.readers'`, or
 `'pydata.readers'` to clearly communicate that any project can declare such an
 entrypoint and any project can perform Reader discovery without reference to or

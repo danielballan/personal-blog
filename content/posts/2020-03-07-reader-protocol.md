@@ -240,7 +240,7 @@ Prior similar work, including
 [intake DataSources](https://intake.readthedocs.io/en/latest/api_base.html#intake.source.base.DataSource),
 and
 [databroker handlers](https://blueskyproject.io/event-model/external.html#handlers),
-had similar goals and some overlap in their approach, but none combine all of:
+have similar goals and some overlap in their approach, but none combine all of:
 
 * A very small API that rhymes with the usage for opening and reading files in
   Python

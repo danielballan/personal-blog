@@ -170,9 +170,10 @@ reader.container == 'dask.dataframe.core.DataFrame'
 ```
 
 This diverges from the original analogy---"Readers are like files that return
-SciPy data structures when you read them." But it reconciles with the return
-instability of ``read()``. The complete Reader API would still be succinct and
-could be implemented in less than 100 lines of code in most cases.
+SciPy data structures when you read them,"---but it reconciles with the return
+type instability of ``read()``. The complete Reader API would still be succinct
+and could be implemented in less than 100 lines of code in most cases (building
+on top of existing I/O code).
 
 ```py
 class SomeReader:

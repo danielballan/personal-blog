@@ -202,6 +202,12 @@ class SomeReader:
 
     def close(self)
         ...
+
+    def __enter__(self):
+        return self
+
+    def __exit__(self, *exc_details):
+        self.close()
 ```
 
 Alternatively, we could consider using type annotations to mark up the return

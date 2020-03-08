@@ -156,8 +156,8 @@ Is it possible to standardize on one return type for `read()`? It seems that
 the Reader protocol would need to support at least tabular and non-tabular data:
 certain operations make sense on DataFrames but not on N-D structures. Also,
 while dask is a core part of the story for large data sets, in domains where
-data sets are generally small, Readers that return an in-memory data structures
-may be appealing, either to avoid a dask dependency or for plain simplicity.
+data sets are generally small, Readers that return in-memory data structures may
+be appealing, either to avoid a dask dependency or for plain simplicity.
 Therefore it seems unlikely we can agree on less than two or perhaps four data
 structures. Having more than 1, we may as well support N.
 

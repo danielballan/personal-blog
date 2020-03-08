@@ -42,8 +42,8 @@ reader.close()
 ```
 
 Before the widespread adoption of dask for deferred I/O and computation, this
-pattern would have had limited scope because pulling up large array data in one
-step is not viable for many real datasets. But if ``reader.read()`` may return a
+pattern would have had limited scope because pulling up large array data all at
+once is not viable for many real datasets. But if ``reader.read()`` may return a
 `dask.array.Array`, a `dask.dataframe.DataFrame`, or an `xarray` data structure
 backed by dask, `reader` can inexpensively and promptly return one of these
 objects with internal chunks and leave it to downstream code to

@@ -220,6 +220,23 @@ combine all of:
 * A prototype of one Reader (wrapping `tifffile`) and a simple example of
   MIME type dispatch have been sketched in a
   [proposal for PIMS](https://github.com/danielballan/pims2-prototype).
+
+  Excerpt from example:
+
+  ```python
+  In [1]: import my_tiff_package
+
+  In [2]: reader = my_tiff_package.TIFFReader('example_data/lfw_subset_as_stack.tif')
+
+  In [3]: reader.read()
+  Out[3]: dask.array<stack, shape=(200, 25, 25), dtype=float64, chunksize=(1, 25, 25), chunktype=numpy.ndarray>
+
+  In [4]: import pims
+
+  In [5]: pims.open('example_data/lfw_subset_as_stack.tif').read()
+  Out[5]: dask.array<stack, shape=(200, 25, 25), dtype=float64, chunksize=(1, 25, 25), chunktype=numpy.ndarray>
+  ```
+
 * Two Readers (fixed-width column text and TIFF again) and a mechanism for
   intergrating with intake's `DataSource` abstraction have been sketched in
   [danielballan/reader_prototype](https://github.com/danielballan/reader_prototype).
@@ -229,8 +246,8 @@ combine all of:
 If this idea gains buy-in from library maintainers, where should we document and
 advertise this entrypoint and what can be done with it?  How should we spell the
 entrypoint group name (`'TBD.readers'`)? Entrypoints are generally scoped to a
-package, as in `'nbconvert.exporters'` or `'pandas_plotting_backends'` to avoid
-potential collisions.
+package to avoid name collisions, as in `'nbconvert.exporters'` or
+`'pandas_plotting_backends'`.
 
 We could center on an I/O-abstracting library such as `'intake.readers'` or
 `'pims.readers'`. (To be clear, it is an open question whether the `Reader` idea

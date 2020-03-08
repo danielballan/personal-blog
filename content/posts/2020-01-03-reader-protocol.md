@@ -261,7 +261,7 @@ will be incorporated into either.) But that risks giving the incorrect
 impression that the functionality is tied to a particular library, when in fact
 these libraries could go away and the entrypoint would still be useful.
 
-With the necessary community support (perhaps a NEP process?) we might claim a
+With the necessary community support (perhaps a NEP process) we might claim a
 more generic namespace like `'scikit.readers'`, `'scipy.readers'`, or
 `'pydata.readers'` to clearly communicate that any project can declare such an
 entrypoint and any project can perform Reader discovery without reference to or

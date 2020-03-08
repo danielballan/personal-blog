@@ -231,10 +231,13 @@ combine all of:
   In [3]: reader.read()
   Out[3]: dask.array<stack, shape=(200, 25, 25), dtype=float64, chunksize=(1, 25, 25), chunktype=numpy.ndarray>
 
-  In [4]: import pims
+  In [4]: reader.read().compute()
+  <numpy array output, snipped>
 
-  In [5]: pims.open('example_data/lfw_subset_as_stack.tif').read()
-  Out[5]: dask.array<stack, shape=(200, 25, 25), dtype=float64, chunksize=(1, 25, 25), chunktype=numpy.ndarray>
+  In [5]: import pims
+
+  In [6]: pims.open('example_data/lfw_subset_as_stack.tif').read()
+  Out[7]: dask.array<stack, shape=(200, 25, 25), dtype=float64, chunksize=(1, 25, 25), chunktype=numpy.ndarray>
   ```
 
 * Two Readers (fixed-width column text and TIFF again) and a mechanism for

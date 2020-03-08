@@ -215,10 +215,10 @@ value of `read()`, but seems wiser to wait until type annotations become
 more established in the SciPy ecosystem in general.
 
 Finally, Readers could allow the user to customize the container type at
-`__init__` time, just as passing an optional parater to the builtin `open` can
+`__init__` time, just as passing an optional parameter to the builtin `open` can
 switch the type returned by `read()`---i.e. `open(..., 'r').read()` vs.
 `open(..., 'rb').read()`. In that context, the class attribute
-`Reader.container` could be taken to adverise a *preferred* container and the
+`Reader.container` could be taken to advertise a *preferred* container and the
 instance attribute `Reader(...).container` would specify the actual container
 returned by that specific instance.
 
@@ -278,7 +278,7 @@ models seem poised to benefit as well.
   ```
 
 * Two Readers (fixed-width formatted text and TIFF again) and a mechanism for
-  intergrating with intake's `DataSource` abstraction have been sketched in
+  integrating with intake's `DataSource` abstraction have been sketched in
   [danielballan/reader_prototype](https://github.com/danielballan/reader_prototype).
 
 ## How should we organize?

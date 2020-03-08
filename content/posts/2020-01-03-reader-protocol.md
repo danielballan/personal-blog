@@ -208,6 +208,14 @@ Alternatively, we could consider using type annotations to mark up the return
 value of `read()`, but seems wiser to wait until type annotations become
 more established in the SciPy ecosystem in general.
 
+Finally, Readers could allow the user to customize the container type at
+`__init__` time, just as passing an optional parater to the builtin `open` can
+switch the type returned by `read()`---i.e. `open(..., 'r').read()` vs.
+`open(..., 'rb').read()`. In that context, the class attribute
+`Reader.container` could be taken to indicate a *preferred* container and the
+instance attribute `Reader(...).container` would specify the actual container
+returned by that specific instance.
+
 ## Designed for community-based scaling
 
 No one has the resources to write Readers for every bespoke format in common

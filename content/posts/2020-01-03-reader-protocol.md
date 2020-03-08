@@ -88,7 +88,7 @@ For the ``FORMAT`` it would be natural to standardize on using MIME type.
 IANA maintains an official registry of formats (e.g. ``'image/tiff'``), and it
 also defines a standard for adding application-specific formats outside of the
 official standard (e.g. ``'application/x-hdf'``).
-Although MIME types are not as well known to the scientist user--programmers
+Although MIME types are not as widely known to the scientist user--programmers
 in the SciPy ecosystem as they are to web developers, MIME types do already
 have foothold in SciPy via IPython rich display's
 [`_repr_mimebundle_`](https://ipython.readthedocs.io/en/stable/config/integrating.html#MyObject._repr_mimebundle_)

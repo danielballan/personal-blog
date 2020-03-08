@@ -31,8 +31,8 @@ file.read()
 file.close()
 ```
 
-we could imagine a "Scientific Python Reader API" that "rhymes" with Python's
-builtin API but returns appropriate SciPy/PyData data structure instead of
+we could imagine a Scientific Python Reader API that "rhymes" with Python's
+builtin API but returns a suitable SciPy/PyData data structure instead of
 strings or bytes.
 
 ```python

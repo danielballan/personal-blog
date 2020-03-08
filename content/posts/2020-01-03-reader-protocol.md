@@ -199,19 +199,19 @@ No one has the resources to write Readers for every bespoke format in common
 use in the SciPy ecosystem. Microscopy formats alone---my home turf---comprise a
 wilderness of persnickety variation.
 
-The Reader API is simple enough that the SciPy's ecosystem's distributed
-contributor base can quickly grasp it and add support the many varied formats in
-use---if they share the goal of making it easier to manage multiple formats and
-believe that Reader adds value.
+If members of SciPy ecosystem's distributed contributor base also feel the pain
+of managing multiple file formats and believe that Reader adds value, they will
+be able to quickly grasp its small API and may begin adding support in the
+codebases that their community already uses.
 
 Prior similar work, including PIMS readers, intake DataSources, and databroker
-handlers, had a similar goal and some overlap in the approach, but none combine
-all of:
+handlers, had a similar goal and some overlap in their approach, but none
+combine all of:
 
 * A very small API that rhymes with the usage for opening and reading files in
   Python
 * Declaring `entry_points` for zero-dependency coordination between libraries
-* MIME types to facilitate dispatch by file type
+* Delcaring MIME types to facilitate dispatch by file type
 * Leveraging dask to leave any sub-selection / slicing to downstream code rather
   than managing it internally
 

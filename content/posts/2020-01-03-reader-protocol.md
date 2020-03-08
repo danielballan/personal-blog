@@ -22,7 +22,7 @@ and make handling multiple formats more seamless?
 
 ## A Reader API that rhymes with Python's file API
 
-If we draw inspiration Python's API for opening files
+If we draw inspiration from Python's API for opening files
 
 ```python
 file = open(...)
@@ -90,7 +90,7 @@ also defines a standard for adding application-specific formats outside of the
 official standard (e.g. ``'application/x-hdf'``).
 Although MIME types are not as widely known to the scientist user--programmers
 in the SciPy ecosystem as they are to web developers, MIME types do already
-have foothold in SciPy via IPython rich display's
+have a foothold in SciPy via IPython rich display's
 [`_repr_mimebundle_`](https://ipython.readthedocs.io/en/stable/config/integrating.html#MyObject._repr_mimebundle_)
 and the
 [Jupyter data explorer](https://github.com/jupyterlab/jupyterlab-data-explorer).
@@ -152,7 +152,7 @@ of dispatch based on its contents/layout.
 
 ## Managing a variety of return types
 
-Is it possible to standardize one return type for `read()`? It seems that
+Is it possible to standardize on one return type for `read()`? It seems that
 the Reader protocol would need to support at least tabular and non-tabular data:
 certain operations make sense on DataFrames but not on N-D structures. Also,
 while dask is a core part of the story for large data sets, in domains where

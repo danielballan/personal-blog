@@ -30,7 +30,7 @@ file.read()
 file.close()
 ```
 
-we could imagine a "Scientific Python Reader API" that rhymes well with this API
+we could imagine a "Scientific Python Reader API" that "rhymes" with this API
 but returns appropriate SciPy/PyData data structure instead of strings or bytes.
 
 ```python
@@ -44,17 +44,16 @@ reader.close()
 Before the widespread adoption of dask for deferred I/O and computation, this
 pattern would have had limited scope because pulling up large array data in one
 step is not viable for many real datasets. But if ``reader.read()`` may return a
-`dask.array.Array` or a `dask.dataframe.DataFrame` or an `xarray` data structure
+`dask.array.Array`, a `dask.dataframe.DataFrame`, or an `xarray` data structure
 backed by dask, `reader` can inexpensively and promptly return one of these
-objects with reasonably-sized internal chunks and leave it to downstream code to
+objects with internal chunks and leave it to downstream code to
 decide if and when to materialize them, in whole or in part.
 
 ## Use Entrypoints to make Readers discoverable
 
 Libraries that implement this Reader API can use
 [entrypoints](https://packaging.python.org/specifications/entry-points/) to
-declare them, using a standard entrypoint group agreed on by the community
-(TBD).
+declare them.
 
 ```python
 # setup.py
@@ -65,35 +64,39 @@ setup(
 )
 ```
 
+Entrypoints were *formerly* a feature/quirk of setuptools but are now officially
+part of the PyPA specification, thanks to efforts by Thomas Kluyver. The name of
+the entrypoint group (`'TBD.readers'` here) is discussed further below.
+
+New libraries may be created to implement this interface on top of existing I/O
+libraries. For example, a new `pandas_reader` library could be published that
+wraps `pandas.read_csv` and/or `dask.dataframe.read_csv` in the Reader API. In
+time, if that works well, established libraries with I/O functionality like
+pandas and tifffile could add such objects and an associated `entry_points`
+declaration.  Importantly, they could do so **without adding any dependency on
+or connection to any particular library**.
+
 For the ``FORMAT`` it would be natural to specify a MIME type string.
 IANA maintains an official registry of formats (e.g. ``'image/png'``), and it
 also defines a standard for adding application-specific formats outside of the
 official standard (e.g. ``'application/x-hdf'``).
-(Although MIME types are not as well known to the scientific user--programmers
-that in the SciPy ecosystem, MIME types do already have foothold in SciPy via
-IPython rich display's
+Although MIME types are not as well known to the scientific user--programmers
+that in the SciPy ecosystem as they are to web developers, MIME types do already
+have foothold in SciPy via IPython rich display's
 [`_repr_mimebundle_`](https://ipython.readthedocs.io/en/stable/config/integrating.html#MyObject._repr_mimebundle_)
 and the
-[Jupyter data explorer](https://github.com/jupyterlab/jupyterlab-data-explorer).)
-
-New libraries may be created to implement this interface on top of existing I/O
-libraries. For example, a `pandas_reader` library could be published that wraps
-`pandas.read_csv` and/or `dask.dataframe.read_csv` in the Reader API. In time,
-if that works well, established libraries like tifffile and pandas could add
-such objects and an associated `entry_points` declaration. Importantly, they
-could do so without adding a new dependency on or connection to any
-particular library.
+[Jupyter data explorer](https://github.com/jupyterlab/jupyterlab-data-explorer).
 
 ## Dispatch based on resource type to a compatible Reader
 
 On a parallel track, other libraries that focus on generalizing I/O and
 abstracting over file formats, such as
 [intake](https://intake.readthedocs.io/) and
-[pims](http://soft-matter.github.io/pims), could develop tooling that uses this
+[pims](http://soft-matter.github.io/pims), could develop tooling on top of this
 protocol. Using Thomas Kluyver's slim library
 [entrypoints](https://entrypoints.readthedocs.io/),
-they could search the Python packages in a user's environment to discover their
-``'TBD.readers'`` and their respective designated ``FORMAT``. (The magic of
+they could search the Python packages in a user's environment to discover all
+``'TBD.readers'`` and their respective designated ``FORMAT``s. (The magic of
 entrypoints is that this search can be performed inexpensively, without
 importing the packages.)
 
@@ -104,8 +107,8 @@ standard library module
 [mimetypes](https://docs.python.org/3/library/mimetypes.html) or one the
 external libraries [puremagic](https://pypi.org/project/puremagic/),
 [python-magic](https://pypi.org/project/python-magic/), or
-[filetype](https://pypi.org/project/filetype/). This would enable to dispatch
-MIME type to a compatible Reader, enable the succinct usage
+[filetype](https://pypi.org/project/filetype/). Then, dispatching on MIME type
+to a suitable enable the succinct usage
 
 ```python
 from some_library import open
@@ -128,6 +131,7 @@ def open(file, *args, **kwargs):
     # Import just the Reader classes of interest.
     compatible_reader_classes = [ep.load() for ep in groups[mimetype]]
     # Choose among the compatible readers....see discussion below.
+    ...
     return reader_class(file, *args, **kwargs)
 ```
 
@@ -148,26 +152,27 @@ avoid a dask dependency or for plain simplicity. Therefore it seems unlikely
 we can agree on less than two or perhaps four data structures. Having more than
 1, we may as well support N.
 
-When multiple readers for a given MIME type are discovered, some heuristic could
-be used to choose between them. Different libraries can make different choices
-here; we don't need to pick one "correct" priority. For example, perhaps the
-richest representation would be chosen, with ``xarray.DataArray`` taking
-precedence over ``numpy.ndarray`` if available; and/or perhaps the laziest
-representation would win, with ``dask.dataframe.DataFrame`` taking precedence
-over ``pandas.DataFrame``. To facilitate this, we might specify one more
-required attribute on ``Reader``. Borrowing an idea from intake, we could
-require Readers to carry a ``container`` attribute, with the string of the
-fully-qualified name of the type returned by `read()`, as in
+When multiple readers for a given MIME type are discovered, a function like
+`open` could use a heuristic to choose between them or present options to the
+user. Different libraries can make different choices here; we don't need to pick
+one "correct" priority. For example, perhaps the richest representation would be
+chosen, with ``xarray.DataArray`` taking precedence over ``numpy.ndarray`` if
+available; and/or perhaps the laziest representation would win, with
+``dask.dataframe.DataFrame`` taking precedence over ``pandas.DataFrame``.
+
+To facilitate this, we need Readers tell us which data structure they return
+from `read()`. Adapting an idea from intake, we could require Readers to define
+a `container` attribute with the string of the fully-qualified name of the
+type returned by `read()`, as in
 
 ```py
 reader.container == 'dask.dataframe.core.DataFrame'
 ```
 
-This diverges from the original analogy---"Readers are just like files that
-return SciPy data structures when you read them."---but it's a reasonable
-mitigation of the return instability of ``read()``. The complete Reader API
-would still be quite succinct and could be implemented in less than 100 LOC in
-most cases.
+This diverges from the original analogy---"Readers are like files that return
+SciPy data structures when you read them." But it reconciles with the return
+instability of ``read()``. The complete Reader API would still be succinct and
+could be implemented in less than 100 lines of code in most cases.
 
 ```py
 class SomeReader:
@@ -184,7 +189,7 @@ class SomeReader:
 ```
 
 Alternatively, we could consider using type annotations to mark up the return
-value of `read()`, but it may be wiser to wait until type annotations become
+value of `read()`, but seems wiser to wait until type annotations become
 more established in the SciPy ecosystem in general.
 
 ## Simplicity is the key to scaling

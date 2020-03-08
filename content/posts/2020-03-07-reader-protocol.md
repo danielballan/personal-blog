@@ -85,9 +85,11 @@ an associated `entry_points` declaration.  Importantly, they could do so
 **without adding any dependency on or connection to any particular library**.
 
 For the ``FORMAT`` it would be natural to standardize on using MIME type.
-IANA maintains an official registry of formats (e.g. ``'image/tiff'``), and it
+IANA maintains an
+[official registry](https://www.iana.org/assignments/media-types/media-types.xhtml)
+of formats (e.g. `'text/csv'`, `'image/tiff'`), and it
 provides a method for defining application-specific formats outside of the
-official registry (e.g. ``'application/x-hdf'``).
+official registry (e.g. `'application/x-hdf'`).
 Although MIME types are not as widely known to the scientist user--programmers
 in the SciPy ecosystem as they are to web developers, MIME types do already
 have a foothold in SciPy via IPython rich display's

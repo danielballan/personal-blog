@@ -279,15 +279,16 @@ models seem poised to benefit as well.
 
 If this idea gains buy-in from library maintainers, where should we document and
 advertise this entrypoint and what can be done with it?  How should we spell the
-entrypoint group name (`'TBD.readers'`)? Entrypoints are generally scoped to a
-package to avoid name collisions, as in `'nbconvert.exporters'` or
-`'pandas_plotting_backends'`.
+entrypoint group name (`'TBD.readers'`)?
 
-We could center on an I/O-abstracting library such as `'intake.readers'` or
-`'pims.readers'`. (To be clear, it is an open question whether the `Reader` idea
-will be incorporated into either.) But that risks giving the incorrect
-impression that the functionality is tied to a particular library, when in fact
-these libraries could go away and the entrypoint would still be useful.
+Entrypoints are generally scoped to a
+package to avoid name collisions, as in `'nbconvert.exporters'` or
+`'pandas_plotting_backends'`. We could center on an I/O-abstracting library such
+as `'intake.readers'` or `'pims.readers'`. (To be clear, it is an open question
+whether the `Reader` idea will be incorporated into either.) But that risks
+giving the incorrect impression that the functionality is tied to a particular
+library, when in fact these libraries could go away and the entrypoint would
+still be useful.
 
 With the necessary community support (perhaps a NEP process) we might claim a
 more generic namespace like `'scikit.readers'`, `'scipy.readers'`, or

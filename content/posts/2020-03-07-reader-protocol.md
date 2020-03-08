@@ -154,12 +154,12 @@ of dispatch based on its contents/layout.
 
 Is it possible to standardize on one return type for `read()`? It seems that
 the Reader protocol would need to support at least tabular and non-tabular data:
-certain operations make sense on DataFrames but not on N-D structures. Also,
-while dask is a core part of the story for large data sets, in domains where
-data sets are generally small, Readers that return in-memory data structures may
-be appealing, either to avoid a dask dependency or for plain simplicity.
-Therefore it seems unlikely we can agree on less than two or perhaps four data
-structures. Having more than 1, we may as well support N.
+certain operations make sense on DataFrames but not on N-dimensional structures.
+Also, while dask is a core part of the story for large data sets, in domains
+where data sets are generally small, Readers that return in-memory data
+structures may be appealing, either to avoid a dask dependency or for plain
+simplicity.  Therefore it seems unlikely we can agree on less than two or
+perhaps four data structures. Having more than 1, we may as well support N.
 
 This also leaves room for Readers that return more specialized data structures
 not yet mentioned here, including a
@@ -184,7 +184,7 @@ a `container` attribute with the fully-qualified name of the type returned by
 reader.container == 'dask.dataframe.core.DataFrame'
 ```
 
-This adds ones more thing to implement and diverges from the original
+This adds one more thing to implement and diverges from the original
 analogy---"Readers are like files that return SciPy data structures when you
 read them,"---but it reconciles with the return type instability of ``read()``.
 The complete Reader API would still be succinct and could be implemented in less

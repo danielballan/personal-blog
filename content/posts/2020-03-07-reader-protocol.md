@@ -277,7 +277,7 @@ models seem poised to benefit as well.
   Out[7]: dask.array<stack, shape=(200, 25, 25), dtype=float64, chunksize=(1, 25, 25), chunktype=numpy.ndarray>
   ```
 
-* Two Readers (fixed-width column text and TIFF again) and a mechanism for
+* Two Readers (fixed-width formatted text and TIFF again) and a mechanism for
   intergrating with intake's `DataSource` abstraction have been sketched in
   [danielballan/reader_prototype](https://github.com/danielballan/reader_prototype).
 

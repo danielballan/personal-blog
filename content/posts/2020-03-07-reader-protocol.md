@@ -86,8 +86,8 @@ an associated `entry_points` declaration.  Importantly, they could do so
 
 For the ``FORMAT`` it would be natural to standardize on using MIME type.
 IANA maintains an official registry of formats (e.g. ``'image/tiff'``), and it
-also defines a standard for adding application-specific formats outside of the
-official standard (e.g. ``'application/x-hdf'``).
+also provides a method for defining application-specific formats outside of the
+official registry (e.g. ``'application/x-hdf'``).
 Although MIME types are not as widely known to the scientist user--programmers
 in the SciPy ecosystem as they are to web developers, MIME types do already
 have a foothold in SciPy via IPython rich display's
@@ -175,7 +175,7 @@ chosen, with ``xarray.DataArray`` taking precedence over ``numpy.ndarray`` if
 available; and/or perhaps the laziest representation would win, with
 ``dask.dataframe.DataFrame`` taking precedence over ``pandas.DataFrame``.
 
-To facilitate this, we need Readers tell us which data structure they return
+To facilitate this, we need Readers to tell us which data structure they return
 from `read()`. Adapting an idea from intake, we could require Readers to define
 a `container` attribute with the fully-qualified name of the type returned by
 `read()`, as in

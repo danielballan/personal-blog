@@ -11,7 +11,7 @@ in a distributed way without adopting any particular library.*
 
 Real scientific data analysis typically involves combining data from multiple
 instruments, research groups, or techniques, each with their own storage formats
-(e.g. CSV vs. TIFF) or layouts and metdata conventions within a given format
+(e.g. CSV vs. TIFF) or layouts and metadata conventions within a given format
 (e.g. NeXuS HDF5 vs. NetCDF HDF5).
 
 Established libraries provide a succinct enough way to load many formats into

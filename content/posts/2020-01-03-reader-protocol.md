@@ -161,6 +161,12 @@ may be appealing, either to avoid a dask dependency or for plain simplicity.
 Therefore it seems unlikely we can agree on less than two or perhaps four data
 structures. Having more than 1, we may as well support N.
 
+This also leaves room for Readers that return more specialized data structures
+not yet mentioned here, including a
+[sparse.COO](https://sparse.pydata.org/en/latest/generated/sparse.COO.html#sparse.COO)
+array or a
+[Glue data object](http://docs.glueviz.org/en/stable/developer_guide/data.html).
+
 When multiple readers for a given MIME type are discovered, a function like
 `open` could use a heuristic to choose between them or present options to the
 user. Different libraries can make different choices here; we don't need to pick
@@ -224,8 +230,13 @@ had similar goals and some overlap in their approach, but none combine all of:
   Python
 * Declaring `entry_points` for zero-dependency coordination between libraries
 * Declaring MIME types to facilitate dispatch by file type
-* Leveraging dask to leave any sub-selection / slicing to downstream code rather
-  than managing it internally
+* Leveraging dask (and other libraries in that space) to leave any sub-selection
+  / slicing to downstream code rather than managing it internally
+
+This is a good time to be building out I/O tools that return richer data
+structures.  Matplotlib is funded to develop a more context-aware data model for
+matplotlib 4.0, and other libraries like glue which have long had such data
+models seem poised to benefit as well.
 
 ## First Prototypes
 

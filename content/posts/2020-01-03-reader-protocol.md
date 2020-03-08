@@ -1,6 +1,7 @@
 ---
 title: A Reader Protocol for the SciPy Ecosystem
 date: 2020-03-07
+draft: true
 ---
 
 *Summary: To make handling data across multiple file formats more seamless, the

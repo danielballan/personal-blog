@@ -150,7 +150,7 @@ may be the right idea: after the initial dispatch based on MIME type, the reader
 registered for that MIME type may inspect the file further and do a second layer
 of dispatch based on its contents/layout.
 
-## Managing a variety of return types
+## Support a variety of data structures
 
 Is it possible to standardize on one return type for `read()`? It seems that
 the Reader protocol would need to support at least tabular and non-tabular data:

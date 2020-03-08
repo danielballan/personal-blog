@@ -208,11 +208,12 @@ Prior similar work, including PIMS readers, intake DataSources, and databroker
 handlers, had a similar goal and some overlap in the approach, but none combine
 all of:
 
-* A very small API that rhymes with the familiar usage for open files in Python
+* A very small API that rhymes with the usage for opening and reading files in
+  Python
 * Declaring `entry_points` for zero-dependency coordination between libraries
-* MIME types to facilitate automated type detection and dispatch where possible
+* MIME types to facilitate dispatch by file type
 * Leveraging dask to leave any sub-selection / slicing to downstream code rather
-  than managing in the individual plugins
+  than managing it internally
 
 ## First Prototypes
 
@@ -226,10 +227,10 @@ all of:
 ## How should we organize?
 
 If this idea gains buy-in from library maintainers, where should we document and
-advertise this entrypoint and what can be done with it?  What should be the
-`TBD` in `'TBD.readers'`? Entrypoints are generally scoped to a package, as in
-`'nbconvert.exporters'` or `'pandas_plotting_backends'` to avoid potential
-collisions.
+advertise this entrypoint and what can be done with it?  How should we spell the
+entrypoint group name (`'TBD.readers'`)? Entrypoints are generally scoped to a
+package, as in `'nbconvert.exporters'` or `'pandas_plotting_backends'` to avoid
+potential collisions.
 
 We could center on an I/O-abstracting library such as `'intake.readers'` or
 `'pims.readers'`. (To be clear, it is an open question whether the `Reader` idea
@@ -237,9 +238,8 @@ will be incorporated into either.) But that risks giving the incorrect
 impression that the functionality is tied to a particular library, when in fact
 these libraries could go away and the entrypoint would still be useful.
 
-With the necessary community support, we might use a more generic namespace
-like `'scikit.readers'`, `'scipy.readers'`, or `'pydata.readers'` to clearly
-communicate that any project can declare such an entrypoint with no special
-dependencies, and any library can developer discovery/dispatch by either
-importing or reimplementing part of
-[entrypoints](https://entrypoints.readthedocs.io/).
+With the necessary community support (perhaps a NEP process?) we might use a
+more generic namespace like `'scikit.readers'`, `'scipy.readers'`, or
+`'pydata.readers'` to clearly communicate that any project can declare such an
+entrypoint and any project can perform Reader discovery without reference to or
+dependency on a specific project.

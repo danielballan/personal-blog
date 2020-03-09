@@ -286,6 +286,21 @@ Interoperable, Reusable) guiding principles for data management and stewardship.
   integrating with intake's `DataSource` abstraction have been sketched in
   [danielballan/reader_prototype](https://github.com/danielballan/reader_prototype).
 
+## Related questions not in scope
+
+This design leaves room for libraries that define Reader-compliant objects and
+libraries that make use of them to address questions such as:
+
+* when to load directly and when to load in a deferred fashion, "lazily"
+* when and how to leverage parallelism
+* handling deeply heirarchical or unstructured data using container types not
+  specifically mentioned here
+* when to detect types implicitly and when to mark up types explicitly
+* remote access
+
+Work in these areas is compatible with the proposed standard and need not be
+explicitly addressed by it.
+
 ## How should we organize?
 
 If this idea gains buy-in from library maintainers, where should we document and

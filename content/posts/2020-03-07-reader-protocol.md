@@ -252,7 +252,10 @@ have similar goals and some overlap in their approach, but none combine all of:
 This is a good time to be building out I/O tools that return richer data
 structures.  Matplotlib is funded to develop a more context-aware data model for
 matplotlib 4.0, and other libraries like glue which have long had such data
-models seem poised to benefit as well.
+models seem poised to benefit as well. Improvements in this space can help drive
+practical conpliance with the
+[FAIR](https://www.nature.com/articles/sdata201618) (Findable, Accessible,
+Interoperable, Reusable) guiding principles for data management and stewardship.
 
 ## First Prototypes
 

@@ -152,6 +152,10 @@ may be the right idea: after the initial dispatch based on MIME type, the reader
 registered for that MIME type may inspect the file further and do a second layer
 of dispatch based on its contents/layout.
 
+Just as libraries can declare Readers without adopting a new dependency,
+libraries can separately experiment with file type detection and/or dispatch in
+ways that make sense for their respective user communities.
+
 ## Support a variety of data structures
 
 Is it possible to standardize on one return type for `read()`? It seems that

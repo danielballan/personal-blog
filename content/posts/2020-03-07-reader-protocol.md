@@ -7,7 +7,8 @@ draft: true
 *Summary: To make handling data across multiple file formats more seamless, the
 SciPy ecosystem would benefit from a file-like protocol that returns
 (potentially lazy) SciPy/PyData data structures when read. This can be achieved
-in a distributed way without adopting any particular library.*
+in a distributed way without a dependency on or reference to any particular
+library.*
 
 Real scientific data analysis typically involves combining data from multiple
 instruments, research groups, or techniques, each with their own storage formats

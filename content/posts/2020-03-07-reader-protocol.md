@@ -215,7 +215,7 @@ class SomeReader:
 ```
 
 Alternatively, we could consider conveying this using type annotations,
-but seems wiser to wait until type annotations become more established in the
+but it seems wiser to wait until type annotations become more established in the
 SciPy ecosystem in general.
 
 There is a strict one-to-one mapping between a given Reader class and its

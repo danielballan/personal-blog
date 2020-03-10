@@ -175,7 +175,7 @@ array or a
 
 When multiple readers for a given MIME type are discovered, such as one
 ``'text/csv'`` Reader declared by pandas and another declared by dask.dataframe,
-a function like `open` could use a heuristic to choose between them or present
+a function like `some_library.open` could use a heuristic to choose between them or present
 options to the user. Different libraries can make different choices here; we
 don't need to pick one "correct" priority. For example, perhaps the laziest
 representation would win, with ``dask.dataframe.DataFrame`` (if available)

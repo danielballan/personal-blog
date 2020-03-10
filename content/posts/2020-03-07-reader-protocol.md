@@ -173,7 +173,7 @@ not yet mentioned here, including a
 array or a
 [Glue data object](http://docs.glueviz.org/en/stable/developer_guide/data.html).
 
-When multiple readers for a given MIME type are discovered, such one
+When multiple readers for a given MIME type are discovered, such as one
 ``'text/csv'`` Reader declared by pandas and another declared by dask.dataframe,
 a function like `open` could use a heuristic to choose between them or present
 options to the user. Different libraries can make different choices here; we

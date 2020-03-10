@@ -80,7 +80,7 @@ below.
 New libraries may be created to implement the Reader interface on top of
 existing I/O libraries. For example, a new `pandas_reader` library could be
 published that wraps `pandas.read_csv` in the Reader API. In time, if that works
-well, pandas could adopt this objects itself along with an associated
+well, pandas could adopt this object itself along with an associated
 `entry_points` declaration.  Importantly, it could do so **without adding any
 dependency on or connection to any particular library**.
 

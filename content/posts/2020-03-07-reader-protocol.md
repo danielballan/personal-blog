@@ -250,7 +250,7 @@ This is a good time to be building out I/O tools that return richer data
 structures.  Matplotlib is funded to develop a more context-aware data model for
 matplotlib 4.0, and other libraries like glue which have long had such data
 models seem poised to benefit as well. Improvements in this space can help drive
-practical conpliance with the
+practical compliance with the
 [FAIR](https://www.nature.com/articles/sdata201618) (Findable, Accessible,
 Interoperable, Reusable) guiding principles for data management and stewardship.
 
@@ -290,7 +290,7 @@ libraries that make use of them to address questions such as:
 
 * when to load directly and when to load in a deferred fashion, "lazily"
 * when and how to leverage parallelism
-* handling deeply heirarchical or unstructured data using container types not
+* handling deeply hierarchical or unstructured data using container types not
   specifically mentioned here
 * when to detect types implicitly and when to mark up types explicitly
 * remote access

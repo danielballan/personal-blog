@@ -216,13 +216,10 @@ Alternatively, we could consider using type annotations to mark up the return
 value of `read()`, but seems wiser to wait until type annotations become
 more established in the SciPy ecosystem in general.
 
-Finally, Readers could allow the user to customize the container type at
-`__init__` time, just as passing an optional parameter to the builtin `open` can
-switch the type returned by `read()`---i.e. `open(..., 'r').read()` vs.
-`open(..., 'rb').read()`. In that context, the class attribute
-`Reader.container` could be taken to advertise a *preferred* container and the
-instance attribute `Reader(...).container` would specify the actual container
-returned by that specific instance.
+There is a strict one-to-one mapping between a given Reader class and its
+container. There is no way to override the container at ``__init__`` time. This
+locked-down simplicity is important if we hope to scale the protocol via
+distributed, community-based effort.
 
 ## Designed for community-based scaling
 

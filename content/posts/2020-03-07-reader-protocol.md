@@ -219,7 +219,10 @@ more established in the SciPy ecosystem in general.
 There is a strict one-to-one mapping between a given Reader class and its
 container. There is no way to override the container at ``__init__`` time. This
 locked-down simplicity is important if we hope to scale the protocol via
-distributed, community-based effort.
+distributed, community-based effort. Of course, downstream of calling `read()`,
+library or user code that employs this Reader can always downcast to a simpler
+structure, e.g. extract a simple `numpy.ndarray` from an
+`xarray.DataArray`-of-`dask.array.Array`s.
 
 ## Designed for community-based scaling
 

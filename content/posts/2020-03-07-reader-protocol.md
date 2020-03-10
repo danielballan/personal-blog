@@ -78,11 +78,10 @@ below.
 
 New libraries may be created to implement the Reader interface on top of
 existing I/O libraries. For example, a new `pandas_reader` library could be
-published that wraps `pandas.read_csv` and/or `dask.dataframe.read_csv` in the
-Reader API. In time, if that works well, established libraries with I/O
-functionality like pandas and tifffile could adopt these objects themselves and
-an associated `entry_points` declaration.  Importantly, they could do so
-**without adding any dependency on or connection to any particular library**.
+published that wraps `pandas.read_csv` in the Reader API. In time, if that works
+well, pandas could adopt this objects itself along with an associated
+`entry_points` declaration.  Importantly, it could do so **without adding any
+dependency on or connection to any particular library**.
 
 For the ``FORMAT`` it would be natural to standardize on using MIME type.
 IANA maintains an
@@ -173,13 +172,13 @@ not yet mentioned here, including a
 array or a
 [Glue data object](http://docs.glueviz.org/en/stable/developer_guide/data.html).
 
-When multiple readers for a given MIME type are discovered, a function like
-`open` could use a heuristic to choose between them or present options to the
-user. Different libraries can make different choices here; we don't need to pick
-one "correct" priority. For example, perhaps the richest representation would be
-chosen, with ``xarray.DataArray`` taking precedence over ``numpy.ndarray`` if
-available; and/or perhaps the laziest representation would win, with
-``dask.dataframe.DataFrame`` taking precedence over ``pandas.DataFrame``.
+When multiple readers for a given MIME type are discovered, such one
+``'text/csv'`` Reader declared by pandas and another declared by dask.dataframe,
+a function like `open` could use a heuristic to choose between them or present
+options to the user. Different libraries can make different choices here; we
+don't need to pick one "correct" priority. For example, perhaps the laziest
+representation would win, with ``dask.dataframe.DataFrame`` (if available)
+taking precedence over ``pandas.DataFrame``.
 
 To facilitate this, we need Readers to tell us which data structure they return
 from `read()`. Adapting an idea from intake, we could require Readers to define
@@ -214,9 +213,9 @@ class SomeReader:
         self.close()
 ```
 
-Alternatively, we could consider using type annotations to mark up `read()`, but
-seems wiser to wait until type annotations become more established in the SciPy
-ecosystem in general.
+Alternatively, we could consider conveying this using type annotations `read()`,
+but seems wiser to wait until type annotations become more established in the
+SciPy ecosystem in general.
 
 There is a strict one-to-one mapping between a given Reader class and its
 container. There is no way to override the container at ``__init__`` time. This

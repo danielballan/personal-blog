@@ -120,13 +120,13 @@ external libraries [puremagic](https://pypi.org/project/puremagic/),
 to a suitable Reader enables a succinct usage like
 
 ```python
-from some_library import open
+import some_library
 
-open('table.csv').read()  # dask.dataframe.DataFrame
-open('array.npz').read()  # numpy.ndarray
-open('image_stack.tiff').read()  # xarray.DataArray
-open('image_series/*.tiff').read()  # xarray.DataArray
-open('video.mp4').read()  # xarray.DataArray
+some_library.open('table.csv').read()  # dask.dataframe.DataFrame
+some_library.open('array.npz').read()  # numpy.ndarray
+some_library.open('image_stack.tiff').read()  # xarray.DataArray
+some_library.open('image_series/*.tiff').read()  # xarray.DataArray
+some_library.open('video.mp4').read()  # xarray.DataArray
 ```
 
 where an implementation of `open` may be

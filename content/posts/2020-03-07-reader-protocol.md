@@ -213,7 +213,7 @@ class SomeReader:
         self.close()
 ```
 
-Alternatively, we could consider conveying this using type annotations `read()`,
+Alternatively, we could consider conveying this using type annotations,
 but seems wiser to wait until type annotations become more established in the
 SciPy ecosystem in general.
 

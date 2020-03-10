@@ -186,11 +186,9 @@ a `container` attribute with the fully-qualified name of the type returned by
 reader.container == 'dask.dataframe.core.DataFrame'
 ```
 
-This adds one more thing to implement and diverges from the original
-analogy---"Readers are like files that return SciPy data structures when you
-read them,"---but it reconciles with the return type instability of ``read()``.
-The complete Reader API would still be succinct and could be implemented in less
-than 100 lines of code in most cases (building on top of existing I/O code).
+This adds one more thing to implement, but the complete Reader API would still
+be succinct and could be implemented in less than 100 lines of code in most
+cases (building on top of existing I/O code).
 
 ```py
 class SomeReader:
@@ -212,15 +210,15 @@ class SomeReader:
         self.close()
 ```
 
-Alternatively, we could consider using type annotations to mark up the return
-value of `read()`, but seems wiser to wait until type annotations become
-more established in the SciPy ecosystem in general.
+Alternatively, we could consider using type annotations to mark up `read()`, but
+seems wiser to wait until type annotations become more established in the SciPy
+ecosystem in general.
 
 There is a strict one-to-one mapping between a given Reader class and its
 container. There is no way to override the container at ``__init__`` time. This
 locked-down simplicity is important if we hope to scale the protocol via
-distributed, community-based effort. Of course, downstream of calling `read()`,
-library or user code that employs this Reader can always downcast to a simpler
+distributed, community-based effort. Of course, downstream of calling
+`reader.read()`, library or user code can always downcast to a simpler
 structure, e.g. extract a simple `numpy.ndarray` from an
 `xarray.DataArray`-of-`dask.array.Array`s.
 

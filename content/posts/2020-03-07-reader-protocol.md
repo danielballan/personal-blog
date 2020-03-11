@@ -308,6 +308,11 @@ libraries that make use of them to address questions such as:
 Work in these areas is compatible with the proposed standard and need not be
 explicitly addressed by it.
 
+This also does not address how to discover readers that are not installed, i.e.
+how to search PyPI for packages that may contain a relevant reader. This is also
+important, but it raises questions about security and gatekeeping. Discovering
+readers within an installed environment is a useful step.
+
 ## How should we organize?
 
 If this idea gains buy-in from library maintainers, where should we document and

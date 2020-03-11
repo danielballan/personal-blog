@@ -58,7 +58,8 @@ Libraries can use
 [entrypoints](https://packaging.python.org/specifications/entry-points/) to
 declare any objects they define that satisfy the Reader API.
 Entrypoints were *formerly* a feature/quirk of setuptools but are now officially
-part of the PyPA specification, thanks to efforts by Thomas Kluyver.
+part of the PyPA specification, thanks to efforts by Thomas Kluyver. Here is an
+example using `setup.py`:
 
 ```python
 # setup.py
@@ -74,6 +75,10 @@ setup(
 )
 ```
 
+Entrypoints are also supported in tool-specific `pyproject.toml` sections by
+[flit](https://flit.readthedocs.io/en/latest/pyproject_toml.html#entry-points-sections)
+and
+[poetry](https://python-poetry.org/docs/pyproject/#plugins).
 A name for the entrypoint group (`'TBD.readers'` here) is considered further
 below.
 

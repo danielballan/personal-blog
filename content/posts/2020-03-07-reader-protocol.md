@@ -298,12 +298,14 @@ Interoperable, Reusable) guiding principles for data management and stewardship.
 This design leaves room for libraries that define Reader-compliant objects and
 libraries that make use of them to address questions such as:
 
-* when to load directly and when to load in a deferred fashion, "lazily"
-* when and how to leverage parallelism
-* handling deeply hierarchical or unstructured data using container types not
-  specifically mentioned here
-* when to detect types implicitly and when to mark up types explicitly
-* remote access
+* When to load directly and when to load in a deferred fashion, "lazily"
+* When and how to leverage parallelism
+* How to handle deeply hierarchical or unstructured data using container types
+  not specifically mentioned here
+* When to detect types implicitly and when to mark up types explicitly
+* How to handle remote data and cloud resorces. (Individual Readers might
+  leverage [fsspec](https://filesystem-spec.readthedocs.io/) for this, for
+  example.)
 
 Work in these areas is compatible with the proposed standard and need not be
 explicitly addressed by it.

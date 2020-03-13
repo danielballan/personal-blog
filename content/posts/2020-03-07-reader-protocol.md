@@ -204,6 +204,11 @@ class SomeReader:
     container = '...'
 
     def __init__(self, ...):
+        # May accept a file buffer, filepath, or file glob pattern, plus any
+        # specific required or optional parameters necessary.
+        # Not all underlying I/O can accept all of these, so we must allow
+        # Readers to vary here. How to *make* a Reader will vary, but the API of
+        # an instance once you *have* one is very locked down.
         ...
 
     def read(self):

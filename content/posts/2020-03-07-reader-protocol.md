@@ -129,7 +129,7 @@ to a suitable Reader enables a succinct usage like
 import some_library
 
 some_library.open('table.csv').read()  # dask.dataframe.DataFrame
-some_library.open('array.npz').read()  # numpy.ndarray
+some_library.open('array.npz').read()  # dask.array.Array
 some_library.open('image_stack.tiff').read()  # xarray.DataArray
 some_library.open('image_series/*.tiff').read()  # xarray.DataArray
 some_library.open('video.mp4').read()  # xarray.DataArray

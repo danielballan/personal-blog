@@ -209,7 +209,7 @@ class SomeReader:
     def read(self):
         ...
 
-    def close(self)
+    def close(self):
         ...
 
     def __enter__(self):

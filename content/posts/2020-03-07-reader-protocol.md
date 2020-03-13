@@ -155,11 +155,17 @@ Within a given MIME type there can be significant variety of internal structure
 or metadata conventions. (HDF5 is a common example.) For this, nested dispatch
 may be the right idea: after the initial dispatch based on MIME type, the reader
 registered for that MIME type may inspect the file further and do a second layer
-of dispatch based on its contents/layout.
+of dispatch based on its contents/layout. For example, a general `HDF5Reader`
+registered for the `'application/x-hdf'` MIME type may distinguish the file
+based on its content and then dispatch to a
+`NetCDFReader` or a `NeXuSTomographyReader`. Automatic inference would be
+possible is some cases, while in others guidance from the user would be
+required.
 
-Just as libraries can declare Readers without adopting a new dependency,
-libraries can separately experiment with file type detection and/or dispatch in
-ways that make sense for their respective user communities.
+There may be no globally "correct" approach for this kind of dispatch, but there
+need not be. Just as libraries can declare Readers without adopting a new
+dependency, libraries can separately experiment with file type detection and/or
+dispatch in ways that make sense for their respective user communities.
 
 ## Support a variety of data structures
 

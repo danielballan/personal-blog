@@ -341,6 +341,28 @@ how to search PyPI for packages that may contain a relevant reader. This is also
 important, but it raises questions about security and gatekeeping. Discovering
 readers within an installed environment is a useful step.
 
+## Why not just a function?
+
+In general I prefer simple functions to object-oriented structures. Why not
+just declare functions that return the data directly in one step, instead of
+``SomeReader(...).read()`?
+
+* As with the built-in `open(...).read()`, it is useful to have a two-step
+  process where the first step checks if the resource can even be found and
+  accessed, and the second step does the reading.
+* The `close()` method and context manager methods give control over when any
+  system resources (file handles, network connections) will be released. A
+  simple function would have to contain these resources in a closure, with no
+  way of explicitly releasing them.
+* We need some place to indicate our ``container``. Frameworks that can
+  standardize on always returning the same type from ``read()`` do not need such
+  a thing, but a share standard that can return a variety of types would, for
+  the reasons described earlier. This could be implemented by putting a simple
+  function *next* to its container, as in ``{'function': read, 'container':
+  'dask.array.Array'}``, and pointing the entrypoint at that. But this is
+  perhaps not any "cleaner" than a small class that implements an interface
+  that is already established in the language.
+
 ## How should we organize?
 
 If this idea gains buy-in from library maintainers, where should we document and

@@ -215,12 +215,19 @@ class SomeReader:
         # Not all underlying I/O can accept all of these, so we must allow
         # Readers to vary here. How to *make* a Reader will vary, but the API of
         # an instance once you *have* one is very locked down.
+
+        # This may open a file/files and in some cases inspect enough to
+        # validate that it can probably read successfully, but it should not
+        # read or cache any large data.
         ...
 
     def read(self):
+        # Construct and return an object of type `SomeReader.container`.
         ...
 
     def close(self):
+        # Clean up any system resources (network connections, file handles)
+        # that were created in __init__.
         ...
 
     def __enter__(self):

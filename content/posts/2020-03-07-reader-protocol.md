@@ -348,8 +348,8 @@ just declare functions that return the data directly in one step, like
 `just_read()` instead of `SomeReader(...).read()`?
 
 * As with the built-in `open(...).read()`, it is useful to have a two-step
-  process where the first step checks if the resource can even be found and
-  accessed, and the second step does the reading.
+  process where the first step checks if the resource can be found and accessed,
+  and the second step does the reading.
 * The `close()` method and context manager methods give control over when any
   system resources (file handles, network connections) will be released. A
   simple function would have to contain these resources in a closure, with no

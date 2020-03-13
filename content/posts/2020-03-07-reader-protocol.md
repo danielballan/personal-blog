@@ -345,7 +345,7 @@ readers within an installed environment is a useful step.
 
 In general I prefer simple functions to object-oriented structures. Why not
 just declare functions that return the data directly in one step, instead of
-``SomeReader(...).read()`?
+`SomeReader(...).read()`?
 
 * As with the built-in `open(...).read()`, it is useful to have a two-step
   process where the first step checks if the resource can even be found and

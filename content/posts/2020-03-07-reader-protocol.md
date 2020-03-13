@@ -300,6 +300,14 @@ Interoperable, Reusable) guiding principles for data management and stewardship.
   Out[7]: dask.array<stack, shape=(200, 25, 25), dtype=float64, chunksize=(1, 25, 25), chunktype=numpy.ndarray>
   ```
 
+  Illustration of the role of `close()` and context methods:
+
+  ```python
+  with TIFFReader(...) as reader:
+      da = reader.read()
+      arr = da.compute()  # works
+  da.compute()  # fails, because underlying file handles are closed
+
 * Two Readers (fixed-width formatted text and TIFF again) and a mechanism for
   integrating with intake's `DataSource` abstraction have been sketched in
   [danielballan/reader_prototype](https://github.com/danielballan/reader_prototype).

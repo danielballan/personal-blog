@@ -353,7 +353,10 @@ just declare functions that return the data directly in one step, like
 * The `close()` method and context manager methods give control over when any
   system resources (file handles, network connections) will be released. A
   simple function would have to contain these resources in a closure, with no
-  way of explicitly releasing them.
+  way of explicitly releasing them. For example, I might get a dask array, read
+  a subset of the chunks out of the dask array, and then be done with it. At
+  that point I can call `reader.close()` or exit the context manager to release
+  the file handle(s) that the dask array chunks were reading from.
 * We need some place to indicate our ``container``. Frameworks that can
   standardize on always returning the same type from ``read()`` do not need such
   a thing, but a share standard that can return a variety of types would, for

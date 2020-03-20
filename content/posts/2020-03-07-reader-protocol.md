@@ -284,10 +284,8 @@ Interoperable, Reusable) guiding principles for data management and stewardship.
 
 ## First Prototypes
 
-* A prototype of one Reader (wrapping `tifffile`)
-  [danielballan/tifffile_reader](https://github.com/danielballan/tifffile_reader).
-
-  Excerpt from example:
+* The repo [danielballan/tifffile_reader](https://github.com/danielballan/tifffile_reader)
+  is a prototype of one Reader (wrapping `tifffile`). Excerpt from example:
 
   ```python
   In [1]: import tifffile_reader

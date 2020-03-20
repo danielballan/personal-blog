@@ -365,6 +365,8 @@ just declare functions that return the data directly in one step, like
   'dask.array.Array'}``, and pointing the entrypoint at that. But this is
   perhaps not any "cleaner" than a small class that implements an interface
   that is already established in the language.
+* If we enounter a need for additional descriptive metadata about the reader
+  class, beyond ``container``, there will be a way to add it.
 
 ## How should we organize?
 

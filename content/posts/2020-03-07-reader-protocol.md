@@ -372,8 +372,9 @@ just declare functions that return the data directly in one step, like
 * If we enounter a need for additional descriptive metadata about the reader
   class, beyond ``container``, there will be a way to add it.
 
-For use cases where a one-shot contract, "Get all the data and close," is
-sufficient libraries can of course wrap the reader in a function and expose that.
+For use cases where a one-shot contract---"Get all the data and close"---is
+sufficient, downstream libraries can of course wrap the reader in a function and
+expose that.
 
 ```python
 def just_read(...):

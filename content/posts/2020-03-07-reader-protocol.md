@@ -284,27 +284,21 @@ Interoperable, Reusable) guiding principles for data management and stewardship.
 
 ## First Prototypes
 
-* A prototype of one Reader (wrapping `tifffile`) and a simple example of
-  MIME type dispatch have been sketched in a
-  [proposal for PIMS](https://github.com/danielballan/pims2-prototype).
+* A prototype of one Reader (wrapping `tifffile`)
+  [danielballan/tifffile_reader](https://github.com/danielballan/tifffile_reader).
 
   Excerpt from example:
 
   ```python
-  In [1]: import my_tiff_package
+  In [1]: import tifffile_reader
 
-  In [2]: reader = my_tiff_package.TIFFReader('example_data/lfw_subset_as_stack.tif')
+  In [2]: reader = tifffile_reader.TIFFReader('example_data/lfw_subset_as_stack.tif')
 
   In [3]: reader.read()
   Out[3]: dask.array<stack, shape=(200, 25, 25), dtype=float64, chunksize=(1, 25, 25), chunktype=numpy.ndarray>
 
   In [4]: reader.read().compute()
   <numpy array output, snipped>
-
-  In [5]: import pims
-
-  In [6]: pims.open('example_data/lfw_subset_as_stack.tif').read()
-  Out[7]: dask.array<stack, shape=(200, 25, 25), dtype=float64, chunksize=(1, 25, 25), chunktype=numpy.ndarray>
   ```
 
   Illustration of the role of `close()` and context methods:
@@ -312,12 +306,24 @@ Interoperable, Reusable) guiding principles for data management and stewardship.
   ```python
   with TIFFReader(...) as reader:
       da = reader.read()
-      arr = da.compute()  # works
-  da.compute()  # fails, because underlying file handles are closed
+      arr = da[...].compute()  # works
+  da[...].compute()  # fails, because underlying file handles are closed
+  ```
 
-* Two Readers (fixed-width formatted text and TIFF again) and a mechanism for
-  integrating with intake's `DataSource` abstraction have been sketched in
-  [danielballan/reader_prototype](https://github.com/danielballan/reader_prototype).
+* The MIME type dispatch has been sketched in a proposal for how PIMS could be
+  reworked to use Readers,
+  [danielballan/pims2-prototype](https://github.com/danielballan/pims2-prototype).
+
+  ```python
+  In [5]: import pims
+
+  In [6]: pims.open('example_data/lfw_subset_as_stack.tif').read()
+  Out[7]: dask.array<stack, shape=(200, 25, 25), dtype=float64, chunksize=(1, 25, 25), chunktype=numpy.ndarray>
+  ```
+
+* A proof of concept for how Reader could integrate with intake's `DataSource`
+  abstraction has been sketched in
+  [danielballan/reader-intake-adapter](https://github.com/danielballan/reader-intake-adapter).
 
 ## Related questions not in scope
 

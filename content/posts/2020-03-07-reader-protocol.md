@@ -362,7 +362,7 @@ just declare functions that return the data directly in one step, like
   the file handle(s) that the dask array chunks were reading from.
 * We need some place to indicate our ``container``. Frameworks that can
   standardize on always returning the same type from ``read()`` do not need such
-  a thing, but a share standard that can return a variety of types would, for
+  a thing, but a shared standard that can return a variety of types would, for
   the reasons described earlier. This could be implemented by putting a simple
   function *next* to its container, as in ``{'function': read, 'container':
   'dask.array.Array'}``, and pointing the entrypoint at that. But this is

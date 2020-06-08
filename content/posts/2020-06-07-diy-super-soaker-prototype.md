@@ -118,8 +118,10 @@ with the following minor variations:
 
 ## Next Steps
 
-* My first nozzle is a sloppily-drilled 1/4" hole in PVC. A neater hole will
-  give a more coherent stream, and a smaller hole will give longer range.
+* My first nozzle is a sloppily-drilled 1/4" hole in PVC. A neater and smaller
+  hole will give a more coherent stream and longer range. My prototypes has a
+  range of about 30 feet; folks online consistently report 55--60 feet for this
+  kind of build.
 * I need a portable water reservoir---maybe a variety of them with different
   sizes.
 * Handle-bar tape (for bicycles) can be used to make more comfortable grips.

@@ -19,10 +19,8 @@ he was employed by NASA's Jet Propulsion Lab. It was ready for commercialization
 in 1990, first marketed as the "Power Drencher". Dozens of variations on this
 design would follow.
 
-![Lonnie Johnson](/static/iamges/lonnie-johnson.jpg)
-
-Photos of Johnson's prototypes and an "evolution tree" of the many Super Soaker
-models are documented in this
+Photos of Johnson's prototypes and an "evolutionary tree" of the many Super
+Soaker models are documented in this
 [lovingly-detailed history](http://www.isoaker.com/Info/history_supersoaker.html).
 A fandom Wiki enumerates the
 [Classic](https://nerf.fandom.com/wiki/Classic_Super_Soaker) (1991--1998),
@@ -30,19 +28,21 @@ A fandom Wiki enumerates the
 [CPS](https://nerf.fandom.com/wiki/CPS) (1996--2002) models.
 
 US Patent [US5150819A, "Double tank pinch trigger pump water gun"](https://patents.google.com/patent/US5150819A/en),
-describes the innovations behind the Classic and XP models. I would
-summarize them like this:
+describes the innovations behind the Classic and XP models. In summary:
 
 * Pumping the Super Soaker does not discharge it. Pressure can be stored---by
   means of two one-way valves---and then released via a separate trigger.
-* The pumping action *pumps water* or a mixture of water and air. This does more
-  work per stroke than pumping air alone would do.
 * The early Classic models have only one chamber, the water reservoir, which is
-  pressurized by pumping. Later Classic and XP models have a *separate charmber*
-  for storing the pressurized air and water. The water resevoir is now
-  unpressurized and can be refilled during pumping or firing. Because the reservoir does
-  not need to be sealed, it can be a bottle with an open hole for refilling or even
-  [a swimming pool](https://nerfpedialegacy.fandom.com/wiki/XP_Pool_Pumper_Blaster).
+  pressurized by pumping air. Later Classic and XP models have a *separate charmber*
+  for storing the pressurized air and water. This has several advantages:
+  * The water resevoir is now unpressurized and can be refilled during pumping
+    or firing.
+  * Because the reservoir does not need to be sealed, it can be a bottle with an
+    open hole for refilling or even
+    [a swimming pool](https://nerfpedialegacy.fandom.com/wiki/XP_Pool_Pumper_Blaster).
+  * The pumping action pumps water or a mixture of water and air. This does more
+    work per stroke than pumping air alone would do because water in
+    incompressible.
 * Finally, there is a safety trigger. To escape through the nozzle, the
   pressurized water and air must flow through a flexible tube. The tube is
   normally pinched shut by a spring. The pinched tube blocks the exit. Pressing
@@ -53,7 +53,7 @@ summarize them like this:
   will open regardless of whether the trigger is pressed.
 
 The patent is credited to Johnson and Bruce M. D'Andrade, who helped develop
-Johnson's homemade prototype into a design viable for commercial manufacture.
+Johnson's prototype into a design viable for commercial manufacture.
 A later patent, [US6193107B1, "Bladder water gun"](https://patents.google.com/patent/US6193107B1/en),
 credited solely to D'Andrade, describes the design underlying the CPS (Constant
 Pressure System) series.
@@ -69,46 +69,62 @@ was removed from the market for being overpowered.
 
 ![US6193107B1 Figure 1](/static/images/US6193107B1-Fig1.png)
 
-
 ## The D.I.Y. Community
 
-In the D.I.Y. community, high-powered CPS models---often with a militarized
-aesthetic---are a popular project. I am much more interested in Johnson's
-original air-pressurized design. It's more adaptable, lighter-weight, and more
-fun. Fortunately, there are some excellent resources on these as well. D.I.Y.
-implementations of Johnson's deign go by the term "Air-Pressure Homemade" online. I followed
+In the D.I.Y. community, high-powered CPS models are popular.I am much more
+interested in Johnson's original air-pressurized design. It's more adaptable,
+lighter-weight, and more fun. Fortunately, there are some excellent resources on
+these as well. D.I.Y. implementations of Johnson's design go by the term
+"Air-Pressure Homemade" online. I followed
 [a detailed guide for building one out of PVC](http://www.sscentral.org/homemade/aph/),
 which was developed by
-[Ben Trettel](http://trettel.org/) about a decade ago. Appropriately enough,
-Trettel is currently a PhD student studying turbulent liquid jet breakup.
-His homemade Super Soakers have been
-[featured by the New York Times](https://www.nytimes.com/2013/08/04/magazine/who-made-that-super-soaker.html).
+[Ben Trettel](http://trettel.org/) about a decade ago. (It made me smile to
+discover than Trettel is currently a PhD student studying turbulent liquid jet
+breakup.)
 
-Many of the links here, including that guide, are archives that haven't been
-substantially updated since the early 2010s. I found more recent activity in the
-formus at [WaterWar.net](https://waterwar.net/forum/index.php), where discussion
-consists of sharing photos of D.I.Y. builds, floating design ideas for
-feedback, and griping about the sorry state of commercially-avialable Super
-Soakers these days.
+Most of the D.I.Y. resources I found, including that guide, are archives that
+haven't been substantially updated since the early 2010s. I found more recent
+activity in the formus at [WaterWar.net](https://waterwar.net/forum/index.php),
+where discussion consists of sharing photos of D.I.Y. builds, floating design
+ideas for feedback, and griping about the sorry state of commercially-available
+Super Soakers these days.
+
+In 2017, D.I.Y. YouTube personality Mark Rober made splash with a
+[record-holding Super Soaker](https://www.youtube.com/watch?v=T1KRQ3RcvXA). His
+video describing the project includes an interview with Johnson.
 
 ## My Prototype
 
-My prototype follows [Trettel's guide](http://www.sscentral.org/homemade/aph/)
-with the following variations:
+![Homemade Super Soaker prototype](/static/images/homemade-super-soaker-prototype.jpg)
 
-* The guide uses a mixture of 1/2" and 3/4" PVC. I used 3/4" throughout.
-* I used (mostly) pressure-rated Schedule 40 PVC. Any old PVC *should* be fine
+{{< youtube lI2h-UshqYA >}}
+
+My prototype follows [Trettel's guide](http://www.sscentral.org/homemade/aph/)
+with the following minor variations:
+
+* The pressure chambers and the water reservoir connection are threaded on, not
+  solvent-welded on, so I can swap out alternatives. (The nozzle is also
+  threaded.)
+* The guide uses a mixture 1/2" and 3/4" PVC. I used 3/4" throughout.
+* The guide uses 3" PVC for the pressure chambers. 3" PVC was not readily
+  available, so I made chambers of 2" PVC with equal volume. As a result, they
+  are quite tall.
+* I used mostly pressure-rated Schedule 40 PVC. Any PVC *should* be fine
   at toy-water-gun pressures, but Trettel has commented subsequently that the
-  guide ought to recommend pressure-rated PVC, and I agree. 3/4" Schedule 40 is
-  rated up to hundreds of psi with a bursting pressure of ~1500 psi. For
-  content, garden hose pressure is 40--70 psi, and water gun pressures are
-  reported to be around 40.
-* The pressure chambers and the water resevoir connection are threaded on, not
-  solvent-welded on, so I can swap out alternatives in the future. The nozzle is
-  also threaded, as it is in Trettel's design.
+  guide ought to recommend pressure-rated PVC to be safe, and I agree. 3/4"
+  Schedule 40 is rated up to hundreds of psi with a bursting pressure of ~1500
+  psi. For context, garden hose pressure is 40--70 psi, and water gun pressures
+  are reported to be around 40 psi.
 
 ## Next Steps
 
-* My nozzle is a sloppily-drilled 1/4" hole in PVC. A neater hole will give a
-  more coherent stream, and a smaller hole will give a longer range.
-  the stream, and a smaller hole would increase the range.
+* My first nozzle is a sloppily-drilled 1/4" hole in PVC. A neater hole will
+  give a more coherent stream, and a smaller hole will give longer range.
+* I need a portable water reservoir---maybe a variety of them with different
+  sizes.
+* Handle-bar tape (for bicycles) can be used to make more comfortable grips.
+* This was my first time solvent-welding PVC. The construction feels solid and
+  has so far not leaked, but it could have been done better. I plan to discard
+  this as a learning experience and start from scratch. I will use exclusively
+  Schedule 40 (pressure-rated) pipe and fixtures.
+* I'd like to paint in the classic Super Soaker color schemes.

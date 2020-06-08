@@ -3,13 +3,15 @@ title: DIY Super Soaker Prototype
 date: 2020-06-07
 ---
 
-The Super Soakers from the 1990s with engineered with clever, patented ideas
-advancing toy water gun technology. Since the early 200s, toy manufacturers have
-abandoned these ideas and regressed to selling cheaper, simpler models that take
-up less shelf space and hit a lower price point. Nowadays, if you want a Super
-Soaker that holds up to the ones from the 90s, you have to find an old model in
-the used toy market or build your own. This what I have learned in building my
-first homemade Super Soaker.
+![Homemade Super Soaker prototype](/static/images/homemade-super-soaker-prototype.jpg)
+
+The Super Soakers from the 1990s were engineered with clever, patented ideas
+advancing toy water gun technology. Since the early 2000s, toy manufacturers
+have abandoned these ideas and regressed to selling cheaper, simpler models that
+take up less shelf space and hit a lower price point. Nowadays, if you want a
+Super Soaker that holds up to the ones from the 90s, you have to find an old
+model in the used toy market or build your own. This what I have learned in
+building my first homemade Super Soaker.
 
 ## Super Soakers Had Some Innovative Ideas
 
@@ -41,7 +43,7 @@ describes the innovations behind the Classic and XP models. In summary:
     open hole for refilling or even
     [a swimming pool](https://nerfpedialegacy.fandom.com/wiki/XP_Pool_Pumper_Blaster).
   * The pumping action pumps water or a mixture of water and air. This does more
-    work per stroke than pumping air alone would do because water in
+    work per stroke than pumping air alone would do because water is
     incompressible.
 * Finally, there is a safety trigger. To escape through the nozzle, the
   pressurized water and air must flow through a flexible tube. The tube is
@@ -52,30 +54,28 @@ describes the innovations behind the Classic and XP models. In summary:
   certain maximum pressure (calibrated by the strength of that spring) the tube
   will open regardless of whether the trigger is pressed.
 
+![US5150819A Figure 2](/static/images/US5150819A-Fig2.png)
+
 The patent is credited to Johnson and Bruce M. D'Andrade, who helped develop
 Johnson's prototype into a design viable for commercial manufacture.
 A later patent, [US6193107B1, "Bladder water gun"](https://patents.google.com/patent/US6193107B1/en),
 credited solely to D'Andrade, describes the design underlying the CPS (Constant
-Pressure System) series.
-
-![US5150819A Figure 2](/static/images/US5150819A-Fig2.png)
-
-In a CPS model, the pumping action forces water into an elastic balloon that
-delivers a steady blast of water when discharged. This has some advantage over
-the XPs, which slow to a trickle when the pressure drops; however, it requires a
-lot more pumping for a comparatively short blast. CPS models also tend to be
-larger and heavier. The history linked above reports rumors that the CPS 2000
-was removed from the market for being overpowered.
+Pressure System) series. In a CPS model, the pumping action forces water into an
+elastic balloon that delivers a steady blast of water when discharged. This has
+some advantage over the XPs, which slow to a trickle when the pressure drops;
+however, it requires a lot more pumping for a comparatively short blast. CPS
+models also tend to be larger and heavier. The history linked above reports
+rumors that the CPS 2000 was removed from the market for being overpowered.
 
 ![US6193107B1 Figure 1](/static/images/US6193107B1-Fig1.png)
 
 ## The D.I.Y. Community
 
-In the D.I.Y. community, high-powered CPS models are popular.I am much more
+In the D.I.Y. community, high-powered CPS models are popular. I am much more
 interested in Johnson's original air-pressurized design. It's more adaptable,
 lighter-weight, and more fun. Fortunately, there are some excellent resources on
 these as well. D.I.Y. implementations of Johnson's design go by the term
-"Air-Pressure Homemade" online. I followed
+"Air-Pressure Homemade". I followed
 [a detailed guide for building one out of PVC](http://www.sscentral.org/homemade/aph/),
 which was developed by
 [Ben Trettel](http://trettel.org/) about a decade ago. (It made me smile to
@@ -95,7 +95,7 @@ video describing the project includes an interview with Johnson.
 
 ## My Prototype
 
-![Homemade Super Soaker prototype](/static/images/homemade-super-soaker-prototype.jpg)
+![Homemade Super Soaker prototype](/static/images/homemade-super-soaker-prototype-labeled.jpg)
 
 {{< youtube lI2h-UshqYA >}}
 
@@ -111,7 +111,7 @@ with the following minor variations:
   are quite tall.
 * I used mostly pressure-rated Schedule 40 PVC. Any PVC *should* be fine
   at toy-water-gun pressures, but Trettel has commented subsequently that the
-  guide ought to recommend pressure-rated PVC to be safe, and I agree. 3/4"
+  guide should have recommend pressure-rated PVC to be safe, and I agree. 3/4"
   Schedule 40 is rated up to hundreds of psi with a bursting pressure of ~1500
   psi. For context, garden hose pressure is 40--70 psi, and water gun pressures
   are reported to be around 40 psi.
@@ -126,7 +126,8 @@ with the following minor variations:
   sizes.
 * Handle-bar tape (for bicycles) can be used to make more comfortable grips.
 * This was my first time solvent-welding PVC. The construction feels solid and
-  has so far not leaked, but it could have been done better. I plan to discard
-  this as a learning experience and start from scratch. I will use exclusively
-  Schedule 40 (pressure-rated) pipe and fixtures.
-* I'd like to paint in the classic Super Soaker color schemes.
+  has so far not leaked, but I could make more secure connections given a second
+  chance. I plan to discard this as a learning experience and start from
+  scratch. I will use exclusively Schedule 40 (pressure-rated) pipe and
+  fixtures.
+* I'd like to apply paint in the classic Super Soaker color schemes.

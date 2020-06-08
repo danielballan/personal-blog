@@ -53,6 +53,7 @@ describes the innovations behind the Classic and XP models. In summary:
   safety mechanism to ensure the Super Soaker cannot be overpressurized: at a
   certain maximum pressure (calibrated by the strength of that spring) the tube
   will open regardless of whether the trigger is pressed.
+
 ![US5150819A Figure 2](/static/images/US5150819A-Fig2.png)
 
 The patent is credited to Johnson and Bruce M. D'Andrade, who helped develop

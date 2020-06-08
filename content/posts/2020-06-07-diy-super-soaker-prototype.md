@@ -13,7 +13,7 @@ Super Soaker that holds up to the ones from the 90s, you have to find an old
 model in the used toy market or build your own. This what I have learned in
 building my first homemade Super Soaker.
 
-## Super Soakers Had Some Innovative Ideas
+## Super Soakers had some innovative ideas
 
 The Super Soaker was invented in 1982 by
 [Lonnie Johnson](https://en.wikipedia.org/wiki/Lonnie_Johnson_(inventor)), while
@@ -53,7 +53,6 @@ describes the innovations behind the Classic and XP models. In summary:
   safety mechanism to ensure the Super Soaker cannot be overpressurized: at a
   certain maximum pressure (calibrated by the strength of that spring) the tube
   will open regardless of whether the trigger is pressed.
-
 ![US5150819A Figure 2](/static/images/US5150819A-Fig2.png)
 
 The patent is credited to Johnson and Bruce M. D'Andrade, who helped develop
@@ -69,7 +68,7 @@ rumors that the CPS 2000 was removed from the market for being overpowered.
 
 ![US6193107B1 Figure 1](/static/images/US6193107B1-Fig1.png)
 
-## The D.I.Y. Community
+## There are good D.I.Y. Super Soaker resources
 
 In the D.I.Y. community, high-powered CPS models are popular. I am much more
 interested in Johnson's original air-pressurized design. It's more adaptable,
@@ -93,7 +92,7 @@ In 2017, D.I.Y. YouTube personality Mark Rober made splash with a
 [record-holding Super Soaker](https://www.youtube.com/watch?v=T1KRQ3RcvXA). His
 video describing the project includes an interview with Johnson.
 
-## My Prototype
+## My prototype is a variation on a popular guide
 
 ![Homemade Super Soaker prototype](/static/images/homemade-super-soaker-prototype-labeled.jpg)
 

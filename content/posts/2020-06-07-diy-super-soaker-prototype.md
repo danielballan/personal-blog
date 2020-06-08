@@ -79,7 +79,7 @@ these as well. D.I.Y. implementations of Johnson's design go by the term
 [a detailed guide for building one out of PVC](http://www.sscentral.org/homemade/aph/),
 which was developed by
 [Ben Trettel](http://trettel.org/) about a decade ago. (It made me smile to
-discover than Trettel is currently a PhD student studying turbulent liquid jet
+discover that Trettel is currently a PhD student studying turbulent liquid jet
 breakup.)
 
 Most of the D.I.Y. resources I found, including that guide, are archives that

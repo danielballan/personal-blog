@@ -99,8 +99,6 @@ video describing the project includes an interview with Johnson.
 
 {{< youtube lI2h-UshqYA >}}
 
-{{< youtube Ah1aPKd0KUM >}}
-
 My prototype follows [Trettel's guide](http://www.sscentral.org/homemade/aph/)
 with the following minor variations:
 
@@ -133,3 +131,8 @@ with the following minor variations:
   scratch. I will use exclusively Schedule 40 (pressure-rated) pipe and
   fixtures.
 * I'd like to apply paint in the classic Super Soaker color schemes.
+
+This shows the stream breakup and the range (about 30 feet). It will be
+interesting to see what difference a better nozzle will make.
+
+{{< youtube Ah1aPKd0KUM >}}

@@ -89,7 +89,7 @@ where discussion consists of sharing photos of D.I.Y. builds, floating design
 ideas for feedback, and griping about the sorry state of commercially-available
 Super Soakers these days.
 
-In 2017, D.I.Y. YouTube personality Mark Rober made splash with a
+In 2017, D.I.Y. YouTube personality Mark Rober made a splash with a
 [record-holding Super Soaker](https://www.youtube.com/watch?v=T1KRQ3RcvXA). His
 video describing the project includes an interview with Johnson.
 

@@ -8,12 +8,20 @@ but Dawn dish detergent and water. Trying this with my daughter last spring, I
 was disappointed by the results. According to bubble enthusiasts on the
 Internet, Dawn changed their formula in 1996, and there is no commercial
 detergent that produces as good a bubble solution as "Old Dawn" did.
+Modern Dawn is still considered better than any commercial alternatives, but it
+needs to be supplemented to get near the results we used to get by just adding
+water.
 
-Modern Dawn is still better than any commercial alternatives, but it needs to be
-supplemented to get near the results we used to get by just adding water. All
-the recipes I read involve specialized ingredients and multi-step procedures.
-This is one of the simpler ones, in terms of ingredients and process, and it
-gives me results about as good as I remember from my childhood.
+There are a confusing number of ways people suggest to do this. All the recipes
+I read involve specialized ingredients and multi-step procedures. The theories
+backing various recipes lack clear evidence, in part because the precise
+ingredients of the commercial detergents themselves are a trade secret and
+change over time. There does not seem to be any consensus on which approach
+works the best, and it's difficult for anyone to systematically test because
+results may depend on many variables, including weather.
+
+This is one of the simpler recipes---in terms of ingredients and process---and
+it gives me results about as good as I remember from my childhood with Old Dawn.
 
 ## Ingredients
 

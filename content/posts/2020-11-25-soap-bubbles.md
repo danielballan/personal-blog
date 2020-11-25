@@ -22,6 +22,8 @@ results may depend on many variables, including weather.
 
 This is one of the simpler recipes---in terms of ingredients and process---and
 it gives me results about as good as I remember from my childhood with Old Dawn.
+The source, which is more detailed, is linked below. It is credited to Edward
+Spiegel.
 
 ## Ingredients
 

@@ -3,13 +3,22 @@ languageCode = "en-us"
 title = "DanAllan.com"
 theme = "temple"
 disqusShortname = "danallan"
-pygmentsCodeFences = true
-pygmentsUseClassic = true
-PygmentsStyle = "default"
 
-[author]
-  name = "Daniel Allan"
-  github = "danielballan"
-  email = "daniel.b.allan@gmail.com"
-  twitter = "danielballan"
-  gaid = "UA-18006985-1"
+# Suppress warnings
+ignoreLogs = ['warning-goldmark-raw-html']
+# Updated syntax highlighting configuration for modern Hugo
+[markup]
+  [markup.highlight]
+    codeFences = true
+    style = "default"
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true  # Allow raw HTML in markdown
+
+[params]
+  [params.author]
+    name = "Daniel Allan"
+    github = "danielballan"
+    email = "daniel.b.allan@gmail.com"
+    twitter = "danielballan"
+    gaid = "UA-18006985-1"

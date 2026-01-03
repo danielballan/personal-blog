@@ -1,3 +1,3 @@
 [submodule "themes/temple"]
 	path = themes/temple
-	url = git@github.com:danielballan/temple
+	url = https://github.com/danielballan/temple.git

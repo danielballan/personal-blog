@@ -15,6 +15,9 @@
 		  DRAFT: 
 		  {{ end }}
 		  <a class="post-list" href="{{ .Permalink }}">{{ $page.Title }}</a>
+		  {{ if .Summary }}
+		  <p class="post-summary">{{ .Summary }}</p>
+		  {{ end }}
 
       <p class="footnote">
         <time datetime="{{ $page.Date }}">

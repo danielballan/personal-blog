@@ -6,7 +6,9 @@ wordpress_id: 2718
 wordpress_url: http://www.danallan.com/?p=2718
 comments: true
 ---
-Quotations from Zlatko Tesanovic, brilliant physicist and colorful character. He was remembered today in a tribute held by our physics department.
+Zlatko Tesanovic was a brilliant physicist who died too young. Today our physics department held a tribute, remembering both his research and his remarkable ability to make complex physics memorable through humor. Here are some of his best classroom moments.
+
+*Compiled from my notes and tributes by [Lynn Redding Carlson](https://www.facebook.com/notes/lynn-redding-carlson/flope-sy/49145446250) and [Jennifer Pursley](http://www.pha.jhu.edu/~jpursley/)*
 
 > Like beautiful people, beautiful functions are somewhat trivial.
 
@@ -47,7 +49,5 @@ Of Bessel Inequality:
 > The problem with liquids is that they are not a gas.
  
 > Ignorance doesn't have to contain logic — truth — behind it.
- 
-Sources: My notes, [Lynn Redding Carlson](https://www.facebook.com/notes/lynn-redding-carlson/flope-sy/49145446250), and [Jennifer Pursley](http://www.pha.jhu.edu/~jpursley/)
 
 For the best written distillation of Zlatko's humor, read his [restaurant guide](http://www.pha.jhu.edu/~zbt/baltofood.html).

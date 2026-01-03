@@ -50,4 +50,4 @@ Of Bessel Inequality:
  
 > Ignorance doesn't have to contain logic — truth — behind it.
 
-For the best written distillation of Zlatko's humor, read his [restaurant guide](http://www.pha.jhu.edu/~zbt/baltofood.html).
+For the best written distillation of Zlatko's humor, read his [restaurant guide](https://web.archive.org/web/20150630122334/http://www.pha.jhu.edu/~zbt/baltofood.html) (archived version).

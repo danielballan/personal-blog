@@ -2,7 +2,6 @@ baseURL = "https://blog.danallan.com/"
 languageCode = "en-us"
 title = "DanAllan.com"
 theme = "temple"
-disqusShortname = "danallan"
 
 # Suppress warnings
 ignoreLogs = ['warning-goldmark-raw-html']

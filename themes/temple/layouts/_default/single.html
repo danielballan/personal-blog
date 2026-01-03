@@ -39,9 +39,6 @@
         {{ .TableOfContents }}
         {{- end }}
         {{ replace .Content "<table>" "<table class='pure-table pure-table-striped'>" | safeHTML }}
-        <div>
-          {{ template "_internal/disqus.html" . }}
-        </div>
       </div>
     </div>
   </div>

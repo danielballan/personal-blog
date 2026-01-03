@@ -1,7 +1,7 @@
 ---
 layout: post
 date: 2012-11-16
-title: Parting Shots
+title: Remembering Zlatko Tesanovic's Classroom Wit
 wordpress_id: 2718
 wordpress_url: http://www.danallan.com/?p=2718
 comments: true

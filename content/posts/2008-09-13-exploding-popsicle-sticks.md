@@ -1,7 +1,9 @@
 ---
 layout: post
 date: 2008-09-13
-title: Popsicle Stick Bombs
+title: Exploding Popsicle Sticks
+aliases:
+  - /posts/2008-09-13-popsicle-stick-bombs/
 image: four-sticks.jpg
 wordpress_id: 370
 wordpress_url: http://www.danallan.com/?p=370

@@ -33,7 +33,7 @@
         {{ end }}
 
         {{ with $page.Params.tags }}
-        <i class="fa fa-tags" title="Tags"></i> [ {{ range $page.Params.tags}}<a href="{{ $baseurl }}tags/{{ . | urlize }}">{{ . }}</a> {{ end }}]
+        <i class="fa fa-tags" title="Tags"></i> {{ range $index, $tag := $page.Params.tags }}{{ if $index }}, {{ end }}<a href="{{ $baseurl }}tags/{{ $tag | urlize }}">#{{ $tag }}</a>{{ end }}
         {{ end }}
 
         {{ with $page.Params.categories }}

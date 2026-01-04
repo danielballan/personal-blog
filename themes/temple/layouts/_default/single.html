@@ -8,6 +8,7 @@
 
       <div class="post-title">
         <p class="footnote">
+          <i class="fas fa-calendar" title="Published date"></i>
           <time datetime="{{ .Date }}">
             {{ if .Site.Params.dateformatpretty }}
               {{ .Date.Format .Site.Params.dateformatpretty }}
@@ -20,7 +21,7 @@
         |
         {{ end }}
         {{ if isset .Params "tags" }}
-        tags: [ {{ range .Params.tags }}<a href="{{ $baseurl }}tags/{{ . | urlize }}">{{ . }}</a> {{ end }}]
+        <i class="fa fa-tags" title="Tags"></i> {{ range $index, $tag := .Params.tags }}{{ if $index }}, {{ end }}<a href="{{ $baseurl }}tags/{{ $tag | urlize }}">#{{ $tag }}</a>{{ end }}
         {{ end }}
 
         {{ if isset .Params "categories" }}

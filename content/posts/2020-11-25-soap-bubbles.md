@@ -4,7 +4,7 @@ summary: When Dawn changed their proprietary soap recipe in 1996, making great b
 date: 2020-11-25
 tags:
 - bubbles
-- science demos
+- sciencedemo
 ---
 
 When I was a kid, you could make giant, long-lasting soap bubbles with nothing

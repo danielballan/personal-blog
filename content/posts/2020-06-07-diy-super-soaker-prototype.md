@@ -1,6 +1,6 @@
 ---
 title: DIY Super Soaker Prototype
-summary: They don't make Super Soakers like the used to when I was a kid. I read the original patents and built my own.
+summary: They don't make Super Soakers like they used to when I was a kid. I read the original patents and built my own.
 date: 2020-06-07
 ---
 
@@ -11,7 +11,7 @@ advancing toy water gun technology. Since the early 2000s, toy manufacturers
 have abandoned these ideas and regressed to selling cheaper, simpler models that
 take up less shelf space and hit a lower price point. Nowadays, if you want a
 Super Soaker that holds up to the ones from the 90s, you have to find an old
-model in the used toy market or build your own. This what I have learned in
+model in the used toy market or build your own. This is what I have learned in
 building my first homemade Super Soaker.
 
 ## Super Soakers had some innovative ideas
@@ -36,7 +36,7 @@ describes the innovations behind the Classic and XP models. In summary:
 * Pumping the Super Soaker does not discharge it. Pressure can be stored---by
   means of two one-way valves---and then released via a separate trigger.
 * The early Classic models have only one chamber, the water reservoir, which is
-  pressurized by pumping air. Later Classic and XP models have a *separate charmber*
+  pressurized by pumping air. Later Classic and XP models have a *separate chamber*
   for storing the pressurized air and water. This has several advantages:
   * The water resevoir is now unpressurized and can be refilled during pumping
     or firing.

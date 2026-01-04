@@ -11,7 +11,7 @@ wordpress_url: http://www.danallan.com/?p=370
 comments: true
 tags: []
 ---
-Get four popsicle sticks, preferrably after eating four popsicles.  (Use normal thin ones, not thick ones from a craft store.)  Assemble them as shown in the photos.  Weaving in the last piece is just a little tricky.  You'll have to bend the sticks a bit.
+Get four popsicle sticks, preferably after eating four popsicles.  (Use normal thin ones, not thick ones from a craft store.)  Assemble them as shown in the photos.  Weaving in the last piece is just a little tricky.  You'll have to bend the sticks a bit.
 
 ![Four Popsicle Sticks](/static/images/popsicle-four-sticks-171x128.jpg)
 ![Step 1](/static/images/popsicle-step-1-171x128.jpg)
@@ -27,7 +27,7 @@ Made in a large supply, these are great for rubber-band-gun target practice. And
 
 ## Science!
 
-To slap an "educational" label on this most excellent of pasttimes, consider it a lesson in potential energy (bending the sticks) converting into kinetic energy (boom!).
+To slap an "educational" label on this most excellent of pastimes, consider it a lesson in potential energy (bending the sticks) converting into kinetic energy (boom!).
 
 ## Advanced Popsicle Stickmanship. 
 

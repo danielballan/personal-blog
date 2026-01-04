@@ -30,7 +30,7 @@ Zlatko Tesanovic was a brilliant physicist who died too young. Today our physics
 > This is where we separate real homo sapiens from other apes.
 
 On Schrodinger, who lived in a house with his wife and her beautiful sister, who was also his mistress: 
-> He knew absolutely everything about partial differential equations. So, you see, if you know everything about a particular method, it is like waiting on a platform for a train. And, sometimes the train does not come. but, for Schordinger of course, the train came Big Time.
+> He knew absolutely everything about partial differential equations. So, you see, if you know everything about a particular method, it is like waiting on a platform for a train. And, sometimes the train does not come. but, for Schrödinger of course, the train came Big Time.
 
 Of Clebsch-Gordan coefficients: 
 > The kindest thing anyone can say about them is that they are tabulated.

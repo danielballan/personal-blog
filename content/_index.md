@@ -24,8 +24,4 @@ My primary work is the [Bluesky Project](http://blueskyproject.io), leveraging t
 </div>
 </div>
 
-<div class="recent-posts-section">
 
-## Recent Posts
-
-</div>

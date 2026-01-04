@@ -13,6 +13,9 @@
                 {{ end }}
 				{{ end }}
                 <li class="pure-menu-item">
+                    <a href="{{ $baseurl }}posts/" class="pure-menu-link">Posts</a>
+                </li>
+                <li class="pure-menu-item">
                     <a href="{{ $baseurl }}about/" class="pure-menu-link">About</a>
                 </li>
             </ul>
@@ -29,6 +32,9 @@
                 </li>
                 {{ end }}
 				{{ end }}
+                <li class="pure-menu-item">
+                    <a href="{{ .Site.BaseURL }}posts" class="pure-menu-link">Posts</a>
+                </li>
                 <li class="pure-menu-item">
                     <a href="{{ .Site.BaseURL }}about" class="pure-menu-link">About</a>
                 </li>

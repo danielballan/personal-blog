@@ -335,17 +335,22 @@ code, kbd, pre, samp {
 /* Responsive design for mobile */
 @media screen and (max-width: 767px) {
     .profile-section {
-        flex-direction: column;
-        text-align: center;
-        gap: 1em;
+        display: block !important;
+        text-align: center !important;
     }
     
     .profile-image {
-        width: 120px;
-        align-self: center;
+        display: block !important;
+        width: 120px !important;
+        margin: 0 auto 1.5em auto !important;
+        float: none !important;
     }
     
     .intro-text {
-        text-align: left;
+        display: block !important;
+        text-align: left !important;
+        width: 100% !important;
+        margin: 0 !important;
+        padding: 0 !important;
     }
 }

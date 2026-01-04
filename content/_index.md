@@ -16,6 +16,7 @@ My primary work is the [Bluesky Project](http://blueskyproject.io), leveraging t
 
 <div class="social-links">
 <a href="https://github.com/danielballan" aria-label="GitHub"><i class="fab fa-github"></i></a>
+<a href="https://www.linkedin.com/in/dan-allan-99ba6382/" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
 <a href="https://twitter.com/danielballan" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
 <a href="mailto:daniel.b.allan@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
 </div>

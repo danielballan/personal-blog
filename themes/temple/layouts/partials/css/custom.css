@@ -275,3 +275,83 @@ code, kbd, pre, samp {
 		display: block;
 	}
 }
+
+/* Landing page styles */
+.landing-intro {
+    margin-bottom: 3em;
+    padding: 2em 0;
+    border-bottom: 1px solid #e3e3e3;
+}
+
+.profile-section {
+    display: flex;
+    align-items: flex-start;
+    gap: 2em;
+    margin-bottom: 1.5em;
+}
+
+.profile-image {
+    width: 150px;
+    height: auto;
+    border-radius: 8px;
+    flex-shrink: 0;
+}
+
+.intro-text {
+    flex: 1;
+}
+
+.intro-text h2 {
+    margin-top: 0;
+    margin-bottom: 1em;
+    color: #369;
+    font-size: 1.5em;
+}
+
+.intro-text p {
+    margin-bottom: 1em;
+    line-height: 1.6;
+}
+
+.social-links {
+    margin-top: 1.5em;
+}
+
+.social-links a {
+    display: inline-block;
+    margin-right: 1em;
+    font-size: 1.2em;
+    color: #575757;
+    transition: color 0.3s ease;
+}
+
+.social-links a:hover {
+    color: #369;
+    text-decoration: none;
+}
+
+.recent-posts-section h2 {
+    margin-bottom: 1em;
+    color: #484848;
+    font-size: 1.3em;
+    border-bottom: 2px solid #369;
+    padding-bottom: 0.5em;
+}
+
+/* Responsive design for mobile */
+@media screen and (max-width: 767px) {
+    .profile-section {
+        flex-direction: column;
+        text-align: center;
+        gap: 1em;
+    }
+    
+    .profile-image {
+        width: 120px;
+        align-self: center;
+    }
+    
+    .intro-text {
+        text-align: left;
+    }
+}

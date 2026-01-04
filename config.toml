@@ -1,6 +1,6 @@
 baseURL = "https://blog.danallan.com/"
 languageCode = "en-us"
-title = "DanAllan.com"
+title = "Dan Allan"
 theme = "temple"
 
 # Suppress warnings

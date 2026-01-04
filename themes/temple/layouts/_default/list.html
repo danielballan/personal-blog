@@ -19,6 +19,7 @@
           <a class="post-list" href="{{ .Permalink }}">{{ $page.Title }}</a>
 
           <p class="footnote">
+            <i class="fas fa-calendar" title="Published date"></i>
             <time datetime="{{ $page.Date }}">
               {{ if .Site.Params.dateformatpretty }}
                 {{ $page.Date.Format .Site.Params.dateformatpretty }}
@@ -26,7 +27,29 @@
                 {{ $page.Date.Format "2006-01-02" }}
               {{ end }}
             </time>
+            |
+            <i class="fas fa-stopwatch" title="Reading time"></i> {{ $page.ReadingTime }} min read
+
+            {{ if or $page.Params.tags $page.Params.categories $page.Params.series }}
+            |
+            {{ end }}
+
+            {{ with $page.Params.tags }}
+            <i class="fa fa-tags" title="Tags"></i> {{ range $index, $tag := $page.Params.tags }}{{ if $index }}, {{ end }}<a href="{{ $baseurl }}tags/{{ $tag | urlize }}">#{{ $tag }}</a>{{ end }}
+            {{ end }}
+
+            {{ with $page.Params.categories }}
+            categories: [ {{ range $page.Params.categories }}<a href="{{ $baseurl }}categories/{{ . | urlize }}">{{ . }}</a> {{ end }}]
+            {{ end }}
+
+            {{ with $page.Params.series }}
+            series: [ {{ range $page.Params.series }}<a href="{{ $baseurl }}series/{{ . | urlize }}">{{ . }}</a> {{ end }}]
+            {{ end }}
+
           </p>
+          {{ if .Summary }}
+          <p class="post-summary">{{ .Summary }}</p>
+          {{ end }}
         </li>
         {{ end }}
         {{ end }}

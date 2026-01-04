@@ -24,6 +24,8 @@
             {{ $page.Date.Format "2006-01-02" }}
           {{ end }}
         </time>
+        |
+        {{ $page.ReadingTime }} min read
 
         {{ if or $page.Params.tags $page.Params.categories $page.Params.series }}
         |

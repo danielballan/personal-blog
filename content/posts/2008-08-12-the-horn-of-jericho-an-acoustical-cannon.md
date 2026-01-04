@@ -3,7 +3,7 @@ layout: post
 date: 2008-08-12
 title: 'The Horn of Jericho: An Acoustical Cannon'
 comments: true
-summary: A demonstration of sound wave physics using Building a unique thermoacoustic device using toaster wire, a catalytic converter, and a giant glass pipe
+summary: A demonstration of sound wave physics by building a unique thermoacoustic device using toaster wire, a catalytic converter, and a giant glass pipe
 
 
 image: 100_4067.jpg

@@ -1,6 +1,6 @@
 ---
 title: DIY Super Soaker Prototype
-summary: They don't make Super Soakers like the used to when I was a kid. I read the original patents and built my own.
+summary: They don't make Super Soakers like they used to when I was a kid. I read the original patents and built my own.
 date: 2020-06-07
 ---
 

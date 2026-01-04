@@ -19,6 +19,6 @@ experimental science at the lab-bench scale and facility scale.
 I enjoy advocating for open source software and open science. I coauthored and
 maintain the [Scientific Python Development
 Guide](https://learn.scientific-python.org/development/) to help scientists
-development sustainable software tools and habits.
+develop sustainable software tools and habits.
 
 I live in Baltimore.

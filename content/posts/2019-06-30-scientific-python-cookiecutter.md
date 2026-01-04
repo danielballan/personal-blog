@@ -1,7 +1,12 @@
 ---
 title: Bootstrap a Scientific Python Library
+summary: A guide and template for scientifc Python libraries
 date: 2019-06-30
 ---
+
+**Note: This work was subsequently incorporated into
+the [Scientific Python Development Guide](https://learn.scientific-python.org/development/).**
+
 At the SciPy conference last year, several talks pointed to the need for better
 resources to help scientists and students get oriented with all the tools
 *around* scientific Python&mdash;tools for version control, testing, and

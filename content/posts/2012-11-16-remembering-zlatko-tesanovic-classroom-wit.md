@@ -2,13 +2,14 @@
 layout: post
 date: 2012-11-16
 title: Remembering Zlatko Tesanovic's Classroom Wit
+summary: A tribute to Professor Tesanovic's way of making quantum mechanics memorable with dry humor
 aliases:
   - /posts/2012-11-16-parting-shots/
 wordpress_id: 2718
 wordpress_url: http://www.danallan.com/?p=2718
 comments: true
 ---
-Zlatko Tesanovic was a brilliant physicist who died too young. Today our physics department held a tribute, remembering both his research and his remarkable ability to make complex physics memorable through humor. Here are some of his best classroom moments.
+Zlatko Tesanovic was a brilliant physicist who died too young. Today our physics department held a tribute, remembering both his research and his remarkable ability to make quantum mechanics memorable through humor. Here are some of his best classroom moments.
 
 *Compiled from my notes and tributes by [Lynn Redding Carlson](https://www.facebook.com/notes/lynn-redding-carlson/flope-sy/49145446250) and [Jennifer Pursley](http://www.pha.jhu.edu/~jpursley/)*
 

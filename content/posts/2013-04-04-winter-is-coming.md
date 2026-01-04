@@ -2,6 +2,7 @@
 layout: post
 date: 2013-04-04
 title: Winter is Coming
+summary: I coauthored an April Fools' Day arXiv paper on planetary orbits that could result in unpredictable winter length.
 wordpress_id: 3005
 wordpress_url: http://www.danallan.com/?p=3005
 comments: true

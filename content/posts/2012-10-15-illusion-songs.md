@@ -2,6 +2,7 @@
 layout: post
 date: 2012-10-15
 title: Illusion Songs
+summary: A new blog collects aural illusions, and I share some favorites that I know
 wordpress_id: 2466
 wordpress_url: http://www.danallan.com/?p=2466
 comments: true

@@ -1,5 +1,6 @@
 ---
 title: Sharing Jupyter Notebooks
+summary: A survey of approaches for sharing Jupyter notebooks
 date: 2019-07-03
 ---
 

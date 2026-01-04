@@ -2,6 +2,7 @@
 layout: post
 date: 2008-09-13
 title: Exploding Popsicle Sticks
+summary: Four Popsicle sticks can be bent together to form a spring-loaded projectile, perfect for entertaining bored children.
 aliases:
   - /posts/2008-09-13-popsicle-stick-bombs/
 image: four-sticks.jpg

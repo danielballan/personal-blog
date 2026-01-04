@@ -1,11 +1,9 @@
 ---
 title: The SciPy Ecosystem Should Use Custom Entrypoints More
+summary: Python library developers can declare custom ``entry_points`` in their packages. This language feature is a good fit for "plugin discovery", and it should be more widely used.
 date: 2019-07-25
 ---
 
-*Summary: Python library developers can declare custom ``entry_points`` in their
-packages. This language feature is a good fit for "plugin discovery", and
-it should be more widely used.*
 
 Think of a Python library that has some programmatic interface, some protocol,
 intended to be "pluggable" by other libraries. Sometimes it is useful to search

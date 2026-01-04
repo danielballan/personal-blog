@@ -2,6 +2,7 @@
 layout: post
 date: 2012-10-27
 title: Photomosaics
+summary: Demonstrating open source software for generating irregular photomosaics
 image: matt-kilroy.jpg
 wordpress_id: 2553
 wordpress_url: http://www.danallan.com/?p=2553

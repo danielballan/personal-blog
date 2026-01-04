@@ -8,7 +8,7 @@ date: 2025-01-04
 <img src="/static/images/dan-allan.png" alt="Daniel Allan" class="profile-image" />
 <div class="intro-text">
 
-## Scientific Software Developer
+## Dan Allan
 
 I build and teach software for data acquisition, data management, and scientific data analysis. I lead the Data Engineering Group at Brookhaven National Lab's [National Synchrotron Light Source II](https://www.bnl.gov/ps/).
 

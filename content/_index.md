@@ -18,6 +18,7 @@ My primary work is the [Bluesky Project](http://blueskyproject.io), leveraging t
 <a href="https://github.com/danielballan" aria-label="GitHub"><i class="fab fa-github"></i></a>
 <a href="https://www.linkedin.com/in/dan-allan-99ba6382/" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
 <a href="https://bsky.app/profile/danielballan.bsky.social" aria-label="Bluesky"><i class="fab fa-bluesky"></i></a>
+<a href="https://www.bnl.gov/staff/dallan" aria-label="BNL Staff Profile"><i class="fas fa-briefcase"></i></a>
 <a href="mailto:daniel.b.allan@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
 </div>
 

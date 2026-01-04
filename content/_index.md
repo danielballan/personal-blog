@@ -1,5 +1,5 @@
 ---
-title: "Daniel Allan"
+title: "Dan Allan"
 date: 2025-01-04
 ---
 

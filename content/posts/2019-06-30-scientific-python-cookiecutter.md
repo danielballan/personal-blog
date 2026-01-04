@@ -1,6 +1,6 @@
 ---
 title: Bootstrap a Scientific Python Library
-summary: A guide and template for scientifc Python libraries
+summary: A guide and template for scientific Python libraries
 date: 2019-06-30
 ---
 

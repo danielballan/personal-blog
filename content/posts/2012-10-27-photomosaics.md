@@ -18,10 +18,10 @@ I was impressed by a magazine cover by [Charis Tsevis](http://www.flickr.com/pho
 I assembled the photo of Neil Armstrong from NASA's [Astronomy Picture of the Day](http://apod.nasa.gov/apod/) archives. Here is the original photo with three styles of photomosaic from my script: traditional regular tiles, multi-scale tiles, and irregularly spaced tiles.
 
 {:.gallery}
-![]](/static/images/neil-armstrong-original1.jpg)
-![]](/static/images/neil-regular.jpg)
-![]](/static/images/neil-armstrong.jpg)
-![]](/static/images/neil-irregular1.jpg)
+![](/static/images/neil-armstrong-original1.jpg)
+![](/static/images/neil-regular.jpg)
+![](/static/images/neil-armstrong.jpg)
+![](/static/images/neil-irregular1.jpg)
 
 
 The [Library of Congress](http://www.loc.gov/pictures/) is another good source for free images in bulk. Below: Ella Fitzgerald from vintage performing arts posters and Baltimore Oriole Matt Kilroy (1866-1940) from baseball cards of his time.

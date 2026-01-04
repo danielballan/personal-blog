@@ -13,14 +13,14 @@ might use a Jupyter notebook as a messy scratch pad, executing cells out of
 order and not bothering to leave a record of the software dependencies (what
 libraries, what versions, etc.).  But if the notebook is meant to be used for a
 long time by many people, you might clean up the code a bit, ensure the cells
-execute top-to-button,
+execute top-to-bottom,
 [move any large code chunks out of the notebook and into traditional Python modules](https://nsls-ii.github.io/scientific-python-cookiecutter/),
 put the notebook in version control using
 [nbdime](https://nbdime.readthedocs.io/en/latest/),
 and specify the software-dependencies in a
 [Binder](https://mybinder.readthedocs.io/en/latest/)-compatible repository.
 The appropriate level of effort and ceremony depends on how far the code will go.
-We can vizualize the space of how "far" code goes in space (people) and in time.
+We can visualize the space of how "far" code goes in space (people) and in time.
 
 ![phase space of how far code goes](/static/images/how-far-phase-space.svg)
 

@@ -9,6 +9,7 @@ wordpress_url: http://www.danallan.com/?p=2553
 comments: true
 tags:
 - photomosaic
+- Python
 ---
 ![](/static/images/neil-armstrong.jpg)
 I wrote a program that builds photomosaics.

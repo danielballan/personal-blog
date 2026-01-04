@@ -2,6 +2,8 @@
 title: Bootstrap a Scientific Python Library
 summary: A guide and template for scientific Python libraries
 date: 2019-06-30
+tags:
+- SciPy
 ---
 
 **Note: This work was subsequently incorporated into

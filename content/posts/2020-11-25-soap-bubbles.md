@@ -2,6 +2,9 @@
 title: Soap Bubble Recipe
 summary: When Dawn changed their proprietary soap recipe in 1996, making great bubble soap at home became less straightforward.
 date: 2020-11-25
+tags:
+- bubbles
+- science demos
 ---
 
 When I was a kid, you could make giant, long-lasting soap bubbles with nothing

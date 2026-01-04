@@ -2,6 +2,9 @@
 title: Sharing Jupyter Notebooks
 summary: A survey of approaches for sharing Jupyter notebooks
 date: 2019-07-03
+tags:
+- SciPy
+- Jupyter
 ---
 
 How can we expand and improve the tools for sharing Jupyter notebooks?

@@ -3,6 +3,8 @@ title: Scientists as Software Users and Developers
 summary: How the scientific Python ecosystem's technology choices reflect the unique continuum between software users and developers in research.
 date: 2019-07-12
 draft: true
+tags:
+- SciPy
 ---
 
 The scientific Python ecosystem is built by and for people who fall along a

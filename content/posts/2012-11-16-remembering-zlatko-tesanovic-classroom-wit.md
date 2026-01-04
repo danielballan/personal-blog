@@ -8,6 +8,8 @@ aliases:
 wordpress_id: 2718
 wordpress_url: http://www.danallan.com/?p=2718
 comments: true
+tags:
+- JHU
 ---
 Zlatko Tesanovic was a brilliant physicist who died too young. Today our physics department held a tribute, remembering both his research and his remarkable ability to make quantum mechanics memorable through humor. Here are some of his best classroom moments.
 

@@ -1,5 +1,6 @@
 ---
 title: "About"
+date: 2025-01-03
 ---
 
 <div class="pull-right"><img src="/static/images/dan-allan.png" style="margin-left: 20px; margin-bottom: 10px;" /></div>
